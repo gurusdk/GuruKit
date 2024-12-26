@@ -16,7 +16,7 @@ Guru SDK
   s.homepage         = 'https://github.com/gurusdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Guru' => 'wumy0726@gmail.com' }
-  s.source           = { :git => 'https://github.com/wum1n9/GuruKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/gurusdk/GuruKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.vendored_frameworks = ['GuruKit.xcframework', 'GuruShared.xcframework']
