@@ -1,0 +1,8 @@
+framework module "GuruShared" {
+    umbrella header "GuruShared.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

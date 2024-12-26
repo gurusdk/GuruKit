@@ -1,0 +1,6 @@
+framework module GuruKit {
+  umbrella header "GuruKit.h"
+  export *
+
+  module * { export * }
+}
