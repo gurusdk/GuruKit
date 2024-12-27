@@ -1,3 +1,7 @@
+.swiftpm
+xcuserdata/
+xcshareddata/
 Sample/Pods
 Sample/Podfile.lock
+Sample/DerivedData/
 Sample/Sample.xcworkspace
