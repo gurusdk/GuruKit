@@ -26,7 +26,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
         
-        GuruSdk.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        GuruSdk.applicationDidFinishLaunching(application, launchOptions: launchOptions)
         
         return true
     }
@@ -38,7 +38,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         options: [UIApplication.OpenURLOptionsKey : Any] = [:]
     ) -> Bool {
         
-        GuruSdk.shared.application(
+        GuruSdk.applicationOpenURL(
             app,
             open: url,
             sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
