@@ -1278,62 +1278,66 @@
         "printedName": "GuruSdk",
         "children": [
           {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
+            "kind": "Function",
+            "name": "applicationDidFinishLaunching",
+            "printedName": "applicationDidFinishLaunching(_:launchOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GuruSdk",
-                "printedName": "GuruKit.GuruSdk",
-                "usr": "c:@M@GuruKit@objc(cs)GuruSdk"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cpy)shared",
-            "mangledName": "$s7GuruKit0A3SdkC6sharedACvpZ",
-            "moduleName": "GuruKit",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
               {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeNominal",
+                "name": "UIApplication",
+                "printedName": "UIKit.UIApplication",
+                "usr": "c:objc(cs)UIApplication"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GuruSdk",
-                    "printedName": "GuruKit.GuruSdk",
-                    "usr": "c:@M@GuruKit@objc(cs)GuruSdk"
+                    "name": "Dictionary",
+                    "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LaunchOptionsKey",
+                        "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                        "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
-                "declKind": "Accessor",
-                "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)shared",
-                "mangledName": "$s7GuruKit0A3SdkC6sharedACvgZ",
-                "moduleName": "GuruKit",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
+                "usr": "s:Sq"
               }
-            ]
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)applicationDidFinishLaunching:launchOptions:",
+            "mangledName": "$s7GuruKit0A3SdkC29applicationDidFinishLaunching_13launchOptionsSbSo13UIApplicationC_SDySo0j6LaunchI3KeyaypGSgtFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "application",
-            "printedName": "application(_:open:sourceApplication:annotation:)",
+            "name": "applicationOpenURL",
+            "printedName": "applicationOpenURL(_:open:sourceApplication:annotation:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1382,70 +1386,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)application:open:sourceApplication:annotation:",
-            "mangledName": "$s7GuruKit0A3SdkC11application_4open17sourceApplication10annotationSbSo13UIApplicationC_10Foundation3URLVSSSgypSgtF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)applicationOpenURL:open:sourceApplication:annotation:",
+            "mangledName": "$s7GuruKit0A3SdkC18applicationOpenURL_4open17sourceApplication10annotationSbSo13UIApplicationC_10Foundation0F0VSSSgypSgtFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "application",
-            "printedName": "application(_:didFinishLaunchingWithOptions:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIApplication",
-                "printedName": "UIKit.UIApplication",
-                "usr": "c:objc(cs)UIApplication"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LaunchOptionsKey",
-                        "printedName": "UIKit.UIApplication.LaunchOptionsKey",
-                        "usr": "c:@T@UIApplicationLaunchOptionsKey"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)application:didFinishLaunchingWithOptions:",
-            "mangledName": "$s7GuruKit0A3SdkC11application_29didFinishLaunchingWithOptionsSbSo13UIApplicationC_SDySo0j6LaunchI3KeyaypGSgtF",
-            "moduleName": "GuruKit",
-            "declAttributes": [
-              "AccessControl",
-              "DiscardableResult",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1462,13 +1410,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)getAdvertisingId",
-            "mangledName": "$s7GuruKit0A3SdkC16getAdvertisingIdSSyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)getAdvertisingId",
+            "mangledName": "$s7GuruKit0A3SdkC16getAdvertisingIdSSyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1485,13 +1434,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)getDeviceId",
-            "mangledName": "$s7GuruKit0A3SdkC11getDeviceIdSSyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)getDeviceId",
+            "mangledName": "$s7GuruKit0A3SdkC11getDeviceIdSSyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1508,20 +1458,21 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)getAppVersion",
-            "mangledName": "$s7GuruKit0A3SdkC13getAppVersionSSyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)getAppVersion",
+            "mangledName": "$s7GuruKit0A3SdkC13getAppVersionSSyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "login",
-            "printedName": "login(authProviderType:onSuccess:onError:)",
+            "printedName": "login(_:onSuccess:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1585,13 +1536,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)loginWithAuthProviderType:onSuccess:onError:",
-            "mangledName": "$s7GuruKit0A3SdkC5login16authProviderType9onSuccess0H5ErrorySo0a10SharedAuthfG0C_yAI_So0aK9LoginRespCtcySo0aK15KotlinThrowableCctF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)login:onSuccess:onError:",
+            "mangledName": "$s7GuruKit0A3SdkC5login_9onSuccess0E5ErrorySo0A22SharedAuthProviderTypeC_yAH_So0aH9LoginRespCtcySo0aH15KotlinThrowableCctFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1607,19 +1559,45 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)logout",
-            "mangledName": "$s7GuruKit0A3SdkC6logoutyyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)logout",
+            "mangledName": "$s7GuruKit0A3SdkC6logoutyyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dumpConfig",
+            "printedName": "dumpConfig()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)dumpConfig",
+            "mangledName": "$s7GuruKit0A3SdkC10dumpConfigSSyFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "querySkuDetails",
-            "printedName": "querySkuDetails(params:onSuccess:onError:)",
+            "printedName": "querySkuDetails(_:onSuccess:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1686,20 +1664,21 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)querySkuDetailsWithParams:onSuccess:onError:",
-            "mangledName": "$s7GuruKit0A3SdkC15querySkuDetails6params9onSuccess0H5ErrorySaySo0a6SharedE11QueryParamsCG_ySaySo0akeF0CGcySo0aK15KotlinThrowableCctF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)querySkuDetails:onSuccess:onError:",
+            "mangledName": "$s7GuruKit0A3SdkC15querySkuDetails_9onSuccess0G5ErrorySaySo0a6SharedE11QueryParamsCG_ySaySo0ajeF0CGcySo0aJ15KotlinThrowableCctFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "purchase",
-            "printedName": "purchase(orderParams:onSuccess:onError:onUserCancelled:)",
+            "printedName": "purchase(_:onSuccess:onError:onUserCancelled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1767,13 +1746,37 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)purchaseWithOrderParams:onSuccess:onError:onUserCancelled:",
-            "mangledName": "$s7GuruKit0A3SdkC8purchase11orderParams9onSuccess0G5Error0G13UserCancelledySo0a14SharedSkuOrderF0C_ySScySo0aL15KotlinThrowableCcyyctF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)purchase:onSuccess:onError:onUserCancelled:",
+            "mangledName": "$s7GuruKit0A3SdkC8purchase_9onSuccess0E5Error0E13UserCancelledySo0A20SharedSkuOrderParamsC_ySScySo0aJ15KotlinThrowableCcyyctFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "queryAndHandleUnconsumedPurchases",
+            "printedName": "queryAndHandleUnconsumedPurchases()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)queryAndHandleUnconsumedPurchases",
+            "mangledName": "$s7GuruKit0A3SdkC33queryAndHandleUnconsumedPurchasesyyFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1837,13 +1840,45 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)logEventWithName:value:params:",
-            "mangledName": "$s7GuruKit0A3SdkC8logEvent4name5value6paramsySS_SSSgSDyS2SGSgtF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)logEventWithName:value:params:",
+            "mangledName": "$s7GuruKit0A3SdkC8logEvent4name5value6paramsySS_SSSgSDyS2SGSgtFZ",
             "moduleName": "GuruKit",
+            "static": true,
+            "objc_name": "logEventWithName:value:params:",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logEvent",
+            "printedName": "logEvent(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)logEventWithName:",
+            "mangledName": "$s7GuruKit0A3SdkC8logEvent4nameySS_tFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "objc_name": "logEventWithName:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1859,13 +1894,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)onAppForegrounded",
-            "mangledName": "$s7GuruKit0A3SdkC17onAppForegroundedyyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)onAppForegrounded",
+            "mangledName": "$s7GuruKit0A3SdkC17onAppForegroundedyyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1881,42 +1917,21 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)onAppBackgrounded",
-            "mangledName": "$s7GuruKit0A3SdkC17onAppBackgroundedyyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)onAppBackgrounded",
+            "mangledName": "$s7GuruKit0A3SdkC17onAppBackgroundedyyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "queryAndHandleUnconsumedPurchases",
-            "printedName": "queryAndHandleUnconsumedPurchases()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)queryAndHandleUnconsumedPurchases",
-            "mangledName": "$s7GuruKit0A3SdkC33queryAndHandleUnconsumedPurchasesyyF",
-            "moduleName": "GuruKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "loginByUserCenter",
-            "printedName": "loginByUserCenter(listener:)",
+            "printedName": "loginByUserCenter(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1931,13 +1946,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)loginByUserCenterWithListener:",
-            "mangledName": "$s7GuruKit0A3SdkC17loginByUserCenter8listeneryAA05IUserG8Listener_p_tF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)loginByUserCenter:",
+            "mangledName": "$s7GuruKit0A3SdkC17loginByUserCenteryyAA05IUserG8Listener_pFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1953,13 +1969,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)collapseUserCenter",
-            "mangledName": "$s7GuruKit0A3SdkC18collapseUserCenteryyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)collapseUserCenter",
+            "mangledName": "$s7GuruKit0A3SdkC18collapseUserCenteryyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1975,15 +1992,42 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)expandUserCenter",
-            "mangledName": "$s7GuruKit0A3SdkC16expandUserCenteryyF",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)expandUserCenter",
+            "mangledName": "$s7GuruKit0A3SdkC16expandUserCenteryyFZ",
             "moduleName": "GuruKit",
+            "static": true,
             "declAttributes": [
               "AccessControl",
-              "RawDocComment",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GuruSdk",
+                "printedName": "GuruKit.GuruSdk",
+                "usr": "c:@M@GuruKit@objc(cs)GuruSdk"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(im)init",
+            "mangledName": "$s7GuruKit0A3SdkCACycfc",
+            "moduleName": "GuruKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -1993,10 +2037,10 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -26347,6 +26391,13 @@
       "offset": 270,
       "length": 10,
       "value": "\"UUID_KEY\""
+    },
+    {
+      "filePath": "\/Users\/wuminghao\/Documents\/Yiihua\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 963,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/wuminghao\/Documents\/Yiihua\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",

@@ -335,14 +335,13 @@ __attribute__((swift_name("AuthToken")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FacebookAuthCredentials")))
 @interface GuruSharedFacebookAuthCredentials : GuruSharedBase
-- (instancetype)initWithAppId:(NSString *)appId protocolScheme:(NSString *)protocolScheme clientToken:(NSString *)clientToken redirectUri:(NSString * _Nullable)redirectUri __attribute__((swift_name("init(appId:protocolScheme:clientToken:redirectUri:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedFacebookAuthCredentials *)doCopyAppId:(NSString *)appId protocolScheme:(NSString *)protocolScheme clientToken:(NSString *)clientToken redirectUri:(NSString * _Nullable)redirectUri __attribute__((swift_name("doCopy(appId:protocolScheme:clientToken:redirectUri:)")));
+- (instancetype)initWithAppId:(NSString *)appId protocolScheme:(NSString * _Nullable)protocolScheme redirectUri:(NSString * _Nullable)redirectUri __attribute__((swift_name("init(appId:protocolScheme:redirectUri:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedFacebookAuthCredentials *)doCopyAppId:(NSString *)appId protocolScheme:(NSString * _Nullable)protocolScheme redirectUri:(NSString * _Nullable)redirectUri __attribute__((swift_name("doCopy(appId:protocolScheme:redirectUri:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *appId __attribute__((swift_name("appId")));
-@property (readonly) NSString *clientToken __attribute__((swift_name("clientToken")));
-@property (readonly) NSString *protocolScheme __attribute__((swift_name("protocolScheme")));
+@property (readonly) NSString * _Nullable protocolScheme __attribute__((swift_name("protocolScheme")));
 @property (readonly) NSString * _Nullable redirectUri __attribute__((swift_name("redirectUri")));
 @end
 
@@ -634,6 +633,7 @@ __attribute__((swift_name("SdkConfig")))
 @interface GuruSharedSdkConfig : GuruSharedBase
 - (instancetype)initWithAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials __attribute__((swift_name("init(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:)"))) __attribute__((objc_designated_initializer));
 - (GuruSharedSdkConfig *)doCopyAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials __attribute__((swift_name("doCopy(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:)")));
+- (NSString *)dump __attribute__((swift_name("dump()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1363,6 +1363,7 @@ __attribute__((swift_name("DarwinBridge")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)darwinBridge __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) GuruSharedDarwinBridge *shared __attribute__((swift_name("shared")));
+- (NSString *)dumpConfig __attribute__((swift_name("dumpConfig()")));
 - (NSString *)getAdvertisingId __attribute__((swift_name("getAdvertisingId()")));
 - (NSString *)getAppVersion __attribute__((swift_name("getAppVersion()")));
 - (NSString *)getDeviceId __attribute__((swift_name("getDeviceId()")));
@@ -1373,6 +1374,7 @@ __attribute__((swift_name("DarwinBridge")))
 - (void)onAppBackgrounded __attribute__((swift_name("onAppBackgrounded()")));
 - (void)onAppForegrounded __attribute__((swift_name("onAppForegrounded()")));
 - (void)purchaseParams:(GuruSharedSkuOrderParams *)params onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(GuruSharedKotlinThrowable *))onError onUserCancelled:(void (^)(void))onUserCancelled __attribute__((swift_name("purchase(params:onSuccess:onError:onUserCancelled:)")));
+- (void)queryAndHandleUnconsumedPurchases __attribute__((swift_name("queryAndHandleUnconsumedPurchases()")));
 - (void)querySkuDetailsParams:(NSArray<GuruSharedSkuQueryParams *> *)params onSuccess:(void (^)(NSArray<GuruSharedSkuDetails *> *))onSuccess onError:(void (^)(GuruSharedKotlinThrowable *))onError __attribute__((swift_name("querySkuDetails(params:onSuccess:onError:)")));
 @property id<GuruSharedDarwinAuthProviderFactory> _Nullable authProviderFactory __attribute__((swift_name("authProviderFactory")));
 @property id<GuruSharedDarwinBillingProviderFactory> _Nullable billingProviderFactory __attribute__((swift_name("billingProviderFactory")));

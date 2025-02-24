@@ -45,26 +45,26 @@ extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationCont
 extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationControllerPresentationContextProviding {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationAnchor(for controller: AuthenticationServices.ASAuthorizationController) -> AuthenticationServices.ASPresentationAnchor
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GuruSdk : ObjectiveC.NSObject {
-  @objc public static let shared: GuruKit.GuruSdk
-  @objc @discardableResult
-  public func application(_ application: UIKit.UIApplication, open url: Foundation.URL, sourceApplication: Swift.String?, annotation: Any?) -> Swift.Bool
-  @objc @discardableResult
-  public func application(_ application: UIKit.UIApplication, didFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
-  @objc public func getAdvertisingId() -> Swift.String
-  @objc public func getDeviceId() -> Swift.String
-  @objc public func getAppVersion() -> Swift.String
-  @objc public func login(authProviderType: GuruShared.AuthProviderType, onSuccess: @escaping (GuruShared.AuthProviderType, GuruShared.LoginResp) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
-  @objc public func logout()
-  @objc public func querySkuDetails(params: [GuruShared.SkuQueryParams], onSuccess: @escaping ([GuruShared.SkuDetails]) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
-  @objc public func purchase(orderParams: GuruShared.SkuOrderParams, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void, onUserCancelled: @escaping () -> Swift.Void)
-  @objc public func logEvent(name: Swift.String, value: Swift.String?, params: [Swift.String : Swift.String]?)
-  @objc public func onAppForegrounded()
-  @objc public func onAppBackgrounded()
-  @objc public func queryAndHandleUnconsumedPurchases()
-  @objc public func loginByUserCenter(listener: any GuruKit.IUserCenterListener)
-  @objc public func collapseUserCenter()
-  @objc public func expandUserCenter()
+@objc @_inheritsConvenienceInitializers @objcMembers public class GuruSdk : ObjectiveC.NSObject {
+  @objc public class func applicationDidFinishLaunching(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
+  @objc public class func applicationOpenURL(_ application: UIKit.UIApplication, open url: Foundation.URL, sourceApplication: Swift.String?, annotation: Any?) -> Swift.Bool
+  @objc public class func getAdvertisingId() -> Swift.String
+  @objc public class func getDeviceId() -> Swift.String
+  @objc public class func getAppVersion() -> Swift.String
+  @objc public class func login(_ type: GuruShared.AuthProviderType, onSuccess: @escaping (GuruShared.AuthProviderType, GuruShared.LoginResp) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
+  @objc public class func logout()
+  @objc public class func dumpConfig() -> Swift.String
+  @objc public class func querySkuDetails(_ params: [GuruShared.SkuQueryParams], onSuccess: @escaping ([GuruShared.SkuDetails]) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
+  @objc public class func purchase(_ orderParams: GuruShared.SkuOrderParams, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void, onUserCancelled: @escaping () -> Swift.Void)
+  @objc public class func queryAndHandleUnconsumedPurchases()
+  @objc public class func logEvent(name: Swift.String, value: Swift.String?, params: [Swift.String : Swift.String]?)
+  @objc public class func logEvent(name: Swift.String)
+  @objc public class func onAppForegrounded()
+  @objc public class func onAppBackgrounded()
+  @objc public class func loginByUserCenter(_ listener: any GuruKit.IUserCenterListener)
+  @objc public class func collapseUserCenter()
+  @objc public class func expandUserCenter()
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class LoginResult : ObjectiveC.NSObject {
