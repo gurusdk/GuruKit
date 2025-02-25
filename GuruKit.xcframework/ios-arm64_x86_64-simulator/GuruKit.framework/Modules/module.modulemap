@@ -4,3 +4,8 @@ framework module GuruKit {
 
   module * { export * }
 }
+
+module GuruKit.Swift {
+  header "GuruKit-Swift.h"
+  requires objc
+}

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GuruKit
 import AuthenticationServices
 import Foundation
@@ -38,12 +38,12 @@ import _SwiftConcurrencyShims
 }
 @available(iOS 13.0, *)
 extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationControllerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func authorizationController(controller: AuthenticationServices.ASAuthorizationController, didCompleteWithAuthorization authorization: AuthenticationServices.ASAuthorization)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func authorizationController(controller: AuthenticationServices.ASAuthorizationController, didCompleteWithError error: any Swift.Error)
+  @objc dynamic public func authorizationController(controller: AuthenticationServices.ASAuthorizationController, didCompleteWithAuthorization authorization: AuthenticationServices.ASAuthorization)
+  @objc dynamic public func authorizationController(controller: AuthenticationServices.ASAuthorizationController, didCompleteWithError error: any Swift.Error)
 }
 @available(iOS 13.0, *)
 extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationControllerPresentationContextProviding {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationAnchor(for controller: AuthenticationServices.ASAuthorizationController) -> AuthenticationServices.ASPresentationAnchor
+  @objc dynamic public func presentationAnchor(for controller: AuthenticationServices.ASAuthorizationController) -> AuthenticationServices.ASPresentationAnchor
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GuruSdk : ObjectiveC.NSObject {
   @objc public class func applicationDidFinishLaunching(_ application: UIKit.UIApplication, launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?) -> Swift.Bool
