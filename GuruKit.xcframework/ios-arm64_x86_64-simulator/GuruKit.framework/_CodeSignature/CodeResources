@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/GuruKit-Swift.h</key>
 		<data>
-		ogeCI2dQDl8j18uOsVDMwiXooi0=
+		8Sd/Y8EFze2fXU4h+sz2Uo6WHHg=
 		</data>
 		<key>Headers/GuruKit.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/GuruKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WGfu3ykovZohuYlMCYblL/qKcFw=
+		TAZ7n5FWcq4hRUbjJUzSrmbwtwI=
 		</data>
 		<key>Modules/GuruKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/GuruKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kF2Eh193ahClsY1l/bBMbDDv2n4=
+		/JjPqUVFBpFcP5PzaWB2+G5avWM=
 		</data>
 		<key>Modules/GuruKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -112,11 +112,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ogeCI2dQDl8j18uOsVDMwiXooi0=
+			8Sd/Y8EFze2fXU4h+sz2Uo6WHHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			7IYGzgbMRpv9GWejo4GjbvqEXlpQxqzBT5xBuBsR4aY=
+			kHAeboQko3+JhDWbz5MVLbcVUpY+svQI5Sna/NyVSx0=
 			</data>
 		</dict>
 		<key>Headers/GuruKit.h</key>
@@ -156,11 +156,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WGfu3ykovZohuYlMCYblL/qKcFw=
+			TAZ7n5FWcq4hRUbjJUzSrmbwtwI=
 			</data>
 			<key>hash2</key>
 			<data>
-			druyDc3KR1+yhVHPf/1KtyhvFksmTULyz+Q1jFzAheI=
+			SWHSskJ4WeE1JWryffwiWLWGZ0m30vBjgUgPYcx2jOs=
 			</data>
 		</dict>
 		<key>Modules/GuruKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -211,11 +211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kF2Eh193ahClsY1l/bBMbDDv2n4=
+			/JjPqUVFBpFcP5PzaWB2+G5avWM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sk9pX3LLDdt9VDHTTJgBlfNWnRqdjXxCmtMw/I+BTdQ=
+			TQqSnmb2yvKpI3v78cTk7GleZmexKFrNP/PGB/xihD8=
 			</data>
 		</dict>
 		<key>Modules/GuruKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>

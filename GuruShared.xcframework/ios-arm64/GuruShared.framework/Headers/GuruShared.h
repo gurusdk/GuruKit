@@ -448,7 +448,7 @@ __attribute__((swift_name("IBillingPurchaseCallback")))
 @protocol GuruSharedIBillingPurchaseCallback
 @required
 - (void)onErrorError:(GuruSharedKotlinThrowable *)error __attribute__((swift_name("onError(error:)")));
-- (void)onSuccessProductId:(NSString *)productId __attribute__((swift_name("onSuccess(productId:)")));
+- (void)onSuccessReceipt:(NSString *)receipt __attribute__((swift_name("onSuccess(receipt:)")));
 - (void)onUserCancelled __attribute__((swift_name("onUserCancelled()")));
 @end
 
@@ -586,7 +586,6 @@ __attribute__((swift_name("SkuOrderParams")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *amount __attribute__((swift_name("amount")));
 @property (readonly) NSString *callbackUrl __attribute__((swift_name("callbackUrl")));
-@property (readonly) NSString *checksum __attribute__((swift_name("checksum")));
 @property (readonly) NSString *currency __attribute__((swift_name("currency")));
 @property (readonly) NSString *merchantId __attribute__((swift_name("merchantId")));
 @property (readonly) NSString *orderId __attribute__((swift_name("orderId")));
@@ -602,7 +601,6 @@ __attribute__((swift_name("SkuOrderParams.Builder")))
 - (GuruSharedSkuOrderParams *)build __attribute__((swift_name("build()")));
 - (GuruSharedSkuOrderParamsBuilder *)setAmountAmount:(NSString *)amount __attribute__((swift_name("setAmount(amount:)")));
 - (GuruSharedSkuOrderParamsBuilder *)setCallbackUrlCallbackUrl:(NSString *)callbackUrl __attribute__((swift_name("setCallbackUrl(callbackUrl:)")));
-- (GuruSharedSkuOrderParamsBuilder *)setChecksumChecksum:(NSString *)checksum __attribute__((swift_name("setChecksum(checksum:)")));
 - (GuruSharedSkuOrderParamsBuilder *)setCurrencyCurrency:(NSString *)currency __attribute__((swift_name("setCurrency(currency:)")));
 - (GuruSharedSkuOrderParamsBuilder *)setMerchantIdMerchantId:(NSString *)merchantId __attribute__((swift_name("setMerchantId(merchantId:)")));
 - (GuruSharedSkuOrderParamsBuilder *)setOrderIdOrderId:(NSString *)orderId __attribute__((swift_name("setOrderId(orderId:)")));
@@ -991,13 +989,12 @@ __attribute__((swift_name("LoginRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LoginResp")))
 @interface GuruSharedLoginResp : GuruSharedBase
-- (instancetype)initWithOpenid:(NSString *)openid token:(NSString *)token newbie:(int32_t)newbie __attribute__((swift_name("init(openid:token:newbie:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithOpenid:(NSString *)openid token:(NSString *)token __attribute__((swift_name("init(openid:token:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedLoginRespCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedLoginResp *)doCopyOpenid:(NSString *)openid token:(NSString *)token newbie:(int32_t)newbie __attribute__((swift_name("doCopy(openid:token:newbie:)")));
+- (GuruSharedLoginResp *)doCopyOpenid:(NSString *)openid token:(NSString *)token __attribute__((swift_name("doCopy(openid:token:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t newbie __attribute__((swift_name("newbie")));
 @property (readonly) NSString *openid __attribute__((swift_name("openid")));
 @property (readonly) NSString *token __attribute__((swift_name("token")));
 @end
@@ -1020,9 +1017,9 @@ __attribute__((swift_name("LoginResp.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("OrderRequest")))
 @interface GuruSharedOrderRequest : GuruSharedBase
-- (instancetype)initWithOrderId:(NSString *)orderId payMode:(NSString *)payMode merchantId:(NSString *)merchantId amount:(NSString *)amount currency:(NSString *)currency callbackUrl:(NSString *)callbackUrl productId:(NSString *)productId productType:(NSString *)productType checksum:(NSString *)checksum __attribute__((swift_name("init(orderId:payMode:merchantId:amount:currency:callbackUrl:productId:productType:checksum:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithOrderId:(NSString *)orderId payMode:(NSString *)payMode merchantId:(NSString *)merchantId amount:(NSString *)amount currency:(NSString *)currency callbackUrl:(NSString *)callbackUrl productId:(NSString *)productId productType:(NSString *)productType __attribute__((swift_name("init(orderId:payMode:merchantId:amount:currency:callbackUrl:productId:productType:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedOrderRequestCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedOrderRequest *)doCopyOrderId:(NSString *)orderId payMode:(NSString *)payMode merchantId:(NSString *)merchantId amount:(NSString *)amount currency:(NSString *)currency callbackUrl:(NSString *)callbackUrl productId:(NSString *)productId productType:(NSString *)productType checksum:(NSString *)checksum __attribute__((swift_name("doCopy(orderId:payMode:merchantId:amount:currency:callbackUrl:productId:productType:checksum:)")));
+- (GuruSharedOrderRequest *)doCopyOrderId:(NSString *)orderId payMode:(NSString *)payMode merchantId:(NSString *)merchantId amount:(NSString *)amount currency:(NSString *)currency callbackUrl:(NSString *)callbackUrl productId:(NSString *)productId productType:(NSString *)productType __attribute__((swift_name("doCopy(orderId:payMode:merchantId:amount:currency:callbackUrl:productId:productType:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -1038,12 +1035,6 @@ __attribute__((swift_name("OrderRequest")))
  *   kotlinx.serialization.SerialName(value="callback_url")
 */
 @property (readonly) NSString *callbackUrl __attribute__((swift_name("callbackUrl")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="checksum")
-*/
-@property (readonly) NSString *checksum __attribute__((swift_name("checksum")));
 
 /**
  * @note annotations
@@ -1184,19 +1175,19 @@ __attribute__((swift_name("VerifyReceiptRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("VerifyReceiptResp")))
 @interface GuruSharedVerifyReceiptResp : GuruSharedBase
-- (instancetype)initWithOrderid:(NSString *)orderid txnid:(NSString *)txnid amount:(double)amount currency:(NSString *)currency product_id:(NSString *)product_id product_type:(NSString *)product_type status:(int32_t)status checksum:(NSString *)checksum ptoken:(NSString *)ptoken __attribute__((swift_name("init(orderid:txnid:amount:currency:product_id:product_type:status:checksum:ptoken:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithOrderid:(NSString *)orderid txnid:(NSString *)txnid amount:(double)amount currency:(NSString *)currency product_id:(NSString *)product_id product_type:(NSString *)product_type status:(int32_t)status ptoken:(NSString *)ptoken sig_data:(NSString *)sig_data __attribute__((swift_name("init(orderid:txnid:amount:currency:product_id:product_type:status:ptoken:sig_data:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedVerifyReceiptRespCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedVerifyReceiptResp *)doCopyOrderid:(NSString *)orderid txnid:(NSString *)txnid amount:(double)amount currency:(NSString *)currency product_id:(NSString *)product_id product_type:(NSString *)product_type status:(int32_t)status checksum:(NSString *)checksum ptoken:(NSString *)ptoken __attribute__((swift_name("doCopy(orderid:txnid:amount:currency:product_id:product_type:status:checksum:ptoken:)")));
+- (GuruSharedVerifyReceiptResp *)doCopyOrderid:(NSString *)orderid txnid:(NSString *)txnid amount:(double)amount currency:(NSString *)currency product_id:(NSString *)product_id product_type:(NSString *)product_type status:(int32_t)status ptoken:(NSString *)ptoken sig_data:(NSString *)sig_data __attribute__((swift_name("doCopy(orderid:txnid:amount:currency:product_id:product_type:status:ptoken:sig_data:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) double amount __attribute__((swift_name("amount")));
-@property (readonly) NSString *checksum __attribute__((swift_name("checksum")));
 @property (readonly) NSString *currency __attribute__((swift_name("currency")));
 @property (readonly) NSString *orderid __attribute__((swift_name("orderid")));
 @property (readonly) NSString *product_id __attribute__((swift_name("product_id")));
 @property (readonly) NSString *product_type __attribute__((swift_name("product_type")));
 @property (readonly) NSString *ptoken __attribute__((swift_name("ptoken")));
+@property (readonly) NSString *sig_data __attribute__((swift_name("sig_data")));
 @property (readonly) int32_t status __attribute__((swift_name("status")));
 @property (readonly) NSString *txnid __attribute__((swift_name("txnid")));
 @end

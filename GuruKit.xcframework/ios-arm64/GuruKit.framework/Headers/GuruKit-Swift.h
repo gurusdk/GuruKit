@@ -540,6 +540,8 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \code
 ///     GuruSdk.login(.google, onSuccess: { provider, resp in
 ///         // 处理成功逻辑
+///         let openid = resp.openid //用户唯一id
+///         let token = resp.token //用户登录token
 ///     }, onError: { error in
 ///         // 处理错误
 ///     })
