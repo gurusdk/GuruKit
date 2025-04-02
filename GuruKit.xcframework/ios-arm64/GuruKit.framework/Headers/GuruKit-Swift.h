@@ -363,54 +363,33 @@ SWIFT_CLASS("_TtC7GuruKit20AppleBillingProvider")
 @class GuruSharedLoginResp;
 @protocol IUserCenterListener;
 
-/// GuruSdk 是面向 Objective-C/Swift 的公开接口类，提供了初始化、登录、支付、事件上报等功能。
-/// <ul>
+/// GuruSdk is the public interface class for Objective-C/Swift, providing functionalities such as initialization, login, payment, and event reporting.
+/// note:
+///
+/// <ol>
 ///   <li>
-///     注意：
-///     <ol>
-///       <li>
-///         在使用其它功能前，需要先调用 <code>GuruSdk.applicationDidFinishLaunching</code>（或 <code>applicationOpenURL</code>）来保证内部初始化完成。
-///       </li>
-///       <li>
-///         如果需要处理 URL 回调（如第三方登录、深链等），请在应用的 <code>openURL</code> 回调中调用 <code>GuruSdk.applicationOpenURL</code>。
-///       </li>
-///       <li>
-///         兼容 iOS 12+；在 iOS 13+ 以及多场景中，会尝试获取正确的 keyWindow 以寻找顶层控制器。
-///       </li>
-///     </ol>
+///     Before using other functions, you must call <code>GuruSdk.applicationDidFinishLaunching</code> (or <code>applicationOpenURL</code>) to ensure internal initialization is complete.
 ///   </li>
-/// </ul>
+///   <li>
+///     If URL callbacks need to be handled (such as for third-party logins or deep linking), please call <code>GuruSdk.applicationOpenURL</code> in the app’s <code>openURL</code> callback.
+///   </li>
+/// </ol>
 SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 @interface GuruSdk : NSObject
-/// 在应用启动时调用，用于进行 SDK 的初始化。
+/// Call this method during app launch to initialize the SDK.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         application: <code>UIApplicationDelegate</code> 中传入的应用对象。
-///       </li>
-///       <li>
-///         launchOptions: 启动选项（如推送信息、深链等）。
-///       </li>
-///     </ul>
+///     If the SDK has not yet been initialized, <code>ensureInitialized()</code> will be automatically called internally.
 ///   </li>
 ///   <li>
-///     返回: 固定返回 <code>true</code>，表示初始化成功。
+///     It is recommended to call this method in <code>AppDelegate.application(_:didFinishLaunchingWithOptions:)</code>.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         若 SDK 尚未初始化，会在内部自动调用 <code>ensureInitialized()</code> 进行初始化。
-///       </li>
-///       <li>
-///         建议在 <code>AppDelegate.application(_:didFinishLaunchingWithOptions:)</code> 中调用。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     func application(_ application: UIApplication,
 ///                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -420,39 +399,25 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param application The application object passed in from <code>UIApplicationDelegate</code>.
+///
+/// \param launchOptions Launch options (such as push info or deep links).
+///
+///
+/// returns:
+/// Always returns <code>true</code>, indicating successful initialization.
 + (BOOL)applicationDidFinishLaunching:(UIApplication * _Nonnull)application launchOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-/// 处理外部 URL 打开应用的情况，用于深度链接或第三方登录回调。
+/// Handles the case when the app is opened via an external URL, used for deep linking or third-party login callbacks.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         application: <code>UIApplicationDelegate</code> 中传入的应用对象。
-///       </li>
-///       <li>
-///         url: 外部打开时传入的 URL。
-///       </li>
-///       <li>
-///         sourceApplication: 来源应用的 Bundle ID。
-///       </li>
-///       <li>
-///         annotation: 额外注释信息。
-///       </li>
-///     </ul>
+///     If the SDK has not yet been initialized, <code>ensureInitialized()</code> will be automatically called internally.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     返回: 固定返回 <code>true</code>，表示已处理。
-///   </li>
-///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         若 SDK 尚未初始化，会在内部自动调用 <code>ensureInitialized()</code> 进行初始化。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
 ///         return GuruSdk.applicationOpenURL(
@@ -465,14 +430,22 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param application The application object passed in from <code>UIApplicationDelegate</code>.
+///
+/// \param url The URL that was used to open the app.
+///
+/// \param sourceApplication The Bundle ID of the source application.
+///
+/// \param annotation Additional annotation information.
+///
+///
+/// returns:
+/// Always returns <code>true</code>, indicating that the URL has been handled.
 + (BOOL)applicationOpenURL:(UIApplication * _Nonnull)application open:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nullable)annotation SWIFT_WARN_UNUSED_RESULT;
-/// 获取广告标识符（IDFA），可能根据隐私策略而不同。
+/// Retrieves the advertising identifier (IDFA), which may vary based on privacy policies.
 /// <ul>
 ///   <li>
-///     返回: 字符串形式的广告标识符。若无权限，可能为空或返回默认值。
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>let adId = GuruSdk.getAdvertisingId()</code>
@@ -480,14 +453,14 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     </ul>
 ///   </li>
 /// </ul>
+///
+/// returns:
+/// A string representing the advertising identifier. If permissions are not granted, it may be empty or return a default value.
 + (NSString * _Nonnull)getAdvertisingId SWIFT_WARN_UNUSED_RESULT;
-/// 获取设备唯一标识。通常由 KMP 层自动生成或读取。
+/// Retrieves the unique device identifier. Usually generated or read automatically by the KMP layer.
 /// <ul>
 ///   <li>
-///     返回: 字符串形式的设备 ID。
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>let deviceId = GuruSdk.getDeviceId()</code>
@@ -495,14 +468,14 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     </ul>
 ///   </li>
 /// </ul>
+///
+/// returns:
+/// A string representing the device ID.
 + (NSString * _Nonnull)getDeviceId SWIFT_WARN_UNUSED_RESULT;
-/// 获取当前应用的版本号（如 <code>1.0.0</code>）。
+/// Retrieves the current version of the app (e.g., <code>1.0.0</code>).
 /// <ul>
 ///   <li>
-///     返回: 字符串形式的 App 版本。
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>let appVersion = GuruSdk.getAppVersion()</code>
@@ -510,57 +483,50 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     </ul>
 ///   </li>
 /// </ul>
+///
+/// returns:
+/// A string representing the app version.
 + (NSString * _Nonnull)getAppVersion SWIFT_WARN_UNUSED_RESULT;
-/// 使用指定的第三方登录方式进行登录。
+/// Logs in using the specified third-party authentication method.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         type: 登录方式，如苹果登录、Google、Facebook 等。
-///       </li>
-///       <li>
-///         onSuccess: 成功回调，返回登录方式及登录响应数据。
-///       </li>
-///       <li>
-///         onError: 失败回调，返回错误信息。
-///       </li>
-///     </ul>
+///     After a successful login, <code>queryAndHandleUnconsumedPurchases()</code> will be automatically called.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         成功后会自动调用 <code>queryAndHandleUnconsumedPurchases()</code>。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     GuruSdk.login(.google, onSuccess: { provider, resp in
-///         // 处理成功逻辑
-///         let openid = resp.openid //用户唯一id
-///         let token = resp.token //用户登录token
+///         // Handle successful login
+///         let openid = resp.openid // Unique user id
+///         let token = resp.token // User login token
 ///     }, onError: { error in
-///         // 处理错误
+///         // Handle error
 ///     })
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param type The authentication type (e.g., Apple login, Google, Facebook, etc.).
+///
+/// \param onSuccess A callback that is invoked upon a successful login, returning the login type and the login response data.
+///
+/// \param onError A callback that is invoked when an error occurs, returning the error information.
+///
 + (void)login:(GuruSharedAuthProviderType * _Nonnull)type onSuccess:(void (^ _Nonnull)(GuruSharedAuthProviderType * _Nonnull, GuruSharedLoginResp * _Nonnull))onSuccess onError:(void (^ _Nonnull)(GuruSharedKotlinThrowable * _Nonnull))onError;
-/// 登出当前登录用户。
+/// Logs out the currently authenticated user.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         登出后需要重新登录才能执行需要用户身份的操作。
-///       </li>
-///     </ul>
+///     After logout, the user must log in again to perform operations that require authentication.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>GuruSdk.logout()</code>
@@ -569,109 +535,107 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///   </li>
 /// </ul>
 + (void)logout;
-/// 调试或诊断用，返回当前 SDK 的配置信息。
+/// For debugging or diagnostics, returns the current SDK configuration information.
 /// <ul>
 ///   <li>
-///     返回: 以字符串形式呈现的配置信息。
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     let configStr = GuruSdk.dumpConfig()
 ///     print(configStr)
 ///
 ///     \endcode</li>
 /// </ul>
+///
+/// returns:
+/// A string representation of the configuration.
 + (NSString * _Nonnull)dumpConfig SWIFT_WARN_UNUSED_RESULT;
-/// 查询商品信息（如订阅、内购商品等）。
+/// Queries product information (such as subscriptions or in-app products).
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         params: 商品查询参数列表。
-///       </li>
-///       <li>
-///         onSuccess: 成功回调，返回商品详情列表。
-///       </li>
-///       <li>
-///         onError: 失败回调，返回错误信息。
-///       </li>
-///     </ul>
+///     Please ensure the user is logged in first, to properly associate purchase information.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         请先确保用户已登录，以便正确绑定购买信息。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
+///     let params1 = SkuQueryParams.Builder().setProductId(productId: "com.simple.test1").setProductType(productType: ProductType.inapp).build()
+///     let params2 = SkuQueryParams.Builder().setProductId(productId: "com.simple.test2").setProductType(productType: ProductType.inapp).build()    
 ///     GuruSdk.querySkuDetails([param1, param2], onSuccess: { details in
-///         // 处理商品信息
+///         // Handle product information
 ///     }, onError: { error in
-///         // 错误处理
+///         // Handle error
 ///     })
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param params A list of product query parameters.
+///
+/// \param onSuccess A callback that is invoked upon a successful query, returning a list of product details.
+///
+/// \param onError A callback that is invoked when an error occurs, returning the error information.
+///
 + (void)querySkuDetails:(NSArray<GuruSharedSkuQueryParams *> * _Nonnull)params onSuccess:(void (^ _Nonnull)(NSArray<GuruSharedSkuDetails *> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(GuruSharedKotlinThrowable * _Nonnull))onError;
-/// 购买指定商品或订阅。
+/// Purchases the specified product or subscription.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         orderParams: 订单参数。
-///       </li>
-///       <li>
-///         onSuccess: 成功回调，返回交易成功后服务器的订单号或交易标识。
-///       </li>
-///       <li>
-///         onError: 失败回调，返回错误信息。
-///       </li>
-///       <li>
-///         onUserCancelled: 用户主动取消购买时的回调。
-///       </li>
-///     </ul>
+///     Ensure that in the iOS environment, in-app purchases are properly configured and a valid product ID is provided.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         请确保在 iOS 环境下已配置好应用内购，且有有效的商品 ID。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
-///     GuruSdk.purchase(orderParams, onSuccess: { orderId in
-///         // 购买成功逻辑
-///     }, onError: { error in
-///         // 错误处理
-///     }, onUserCancelled: {
-///         // 用户取消处理
-///     })
+///     let params = SkuQueryParams.Builder().setProductId(productId: "com.simple.test1").setProductType(productType: ProductType.inapp).build()
+///     GuruSdk.querySkuDetails([params]) { skuDetails in
+///       if !skuDetails.isEmpty {
+///              let sku = skuDetails[0]
+///              let orderid = Int(Date().timeIntervalSince1970)//Customize unique order id
+///              let builder = SkuOrderParams.Builder()
+///              builder.setOrderId(orderId: String(orderid))
+///                  .setProductId(productId: sku.productId)
+///                  .setProductType(productType: sku.productType)
+///                  .setAmount(amount: sku.amount)
+///                  .setCallbackUrl(callbackUrl: "callback_url")
+///                  .setCurrency(currency: sku.currency)
+///              GuruSdk.purchase(builder.build()) { receipt in
+///                  // Handle successful purchase
+///              } onError: { error in
+///                  // Handle error
+///              } onUserCancelled: {
+///                  // Handle user cancellation
+///              }
+///         }
+///     } onError: { error in
+///         // Handle error
+///      }
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param orderParams The order parameters.
+///
+/// \param onSuccess A callback that is invoked upon a successful purchase, returning the server order ID or transaction identifier.
+///
+/// \param onError A callback that is invoked when an error occurs, returning the error information.
+///
+/// \param onUserCancelled A callback that is invoked when the user cancels the purchase.
+///
 + (void)purchase:(GuruSharedSkuOrderParams * _Nonnull)orderParams onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(GuruSharedKotlinThrowable * _Nonnull))onError onUserCancelled:(void (^ _Nonnull)(void))onUserCancelled;
-/// 查询并处理未消耗的购买（如未完成的交易或订阅）。
+/// Queries and handles unconsumed purchases (such as unfinished transactions or subscriptions).
+/// note:
+///
 /// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         建议在登录成功后立即调用，用于恢复用户已购买但未确认的内容。
-///       </li>
-///     </ul>
+///     It is recommended to call this immediately after a successful login to restore purchases that have been made but not yet acknowledged.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>GuruSdk.queryAndHandleUnconsumedPurchases()</code>
@@ -680,50 +644,33 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///   </li>
 /// </ul>
 + (void)queryAndHandleUnconsumedPurchases;
-/// 上报自定义事件，带可选的事件值与额外参数。
+/// Reports a custom event with an optional event value and additional parameters.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         name: 事件名称。
-///       </li>
-///       <li>
-///         value: 事件值，可空。
-///       </li>
-///       <li>
-///         params: 额外参数，键值对形式。
-///       </li>
-///     </ul>
+///     Specific event types and their purposes can be analyzed in the backend using the collected event data.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         具体事件类型、用途可在后台分析埋点数据时使用。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     GuruSdk.logEvent(name: "ViewPage", value: "Home", params: ["section": "banner"])
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param name The event name.
+///
+/// \param value The event value, which can be nil.
+///
+/// \param params Additional parameters as key-value pairs.
+///
 + (void)logEventWithName:(NSString * _Nonnull)name value:(NSString * _Nullable)value params:(NSDictionary<NSString *, NSString *> * _Nullable)params;
-/// 上报自定义事件，只包含事件名称。
+/// Reports a custom event that only includes the event name.
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         name: 事件名称。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>GuruSdk.logEvent(name: "ButtonClicked")</code>
@@ -731,11 +678,13 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     </ul>
 ///   </li>
 /// </ul>
+/// \param name The event name.
+///
 + (void)logEventWithName:(NSString * _Nonnull)name;
-/// 当应用从后台进入前台时调用，用于告知 SDK 做相应处理。
+/// Call this method when the app enters the foreground to notify the SDK to perform necessary actions.
 /// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     func sceneDidBecomeActive(_ scene: UIScene) {
 ///         GuruSdk.onAppForegrounded()
@@ -744,10 +693,10 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \endcode</li>
 /// </ul>
 + (void)onAppForegrounded;
-/// 当应用进入后台时调用，用于告知 SDK 做相应处理。
+/// Call this method when the app enters the background to notify the SDK to perform necessary actions.
 /// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     func sceneWillResignActive(_ scene: UIScene) {
 ///         GuruSdk.onAppBackgrounded()
@@ -756,36 +705,29 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \endcode</li>
 /// </ul>
 + (void)onAppBackgrounded;
-/// 显示用户中心的登录页面示例逻辑。
+/// Displays the login page example for the user center.
+/// note:
+///
 /// <ul>
 ///   <li>
-///     参数:
-///     <ul>
-///       <li>
-///         listener: 用户中心登录过程的回调监听。
-///       </li>
-///     </ul>
+///     The view must be presented on the main thread.
 ///   </li>
+/// </ul>
+/// <ul>
 ///   <li>
-///     注意:
-///     <ul>
-///       <li>
-///         需在主线程显示视图。
-///       </li>
-///     </ul>
-///   </li>
-///   <li>
-///     使用示例:
+///     Example:
 ///     \code
 ///     GuruSdk.loginByUserCenter(myListener)
 ///
 ///     \endcode</li>
 /// </ul>
+/// \param listener A callback listener for the user center login process.
+///
 + (void)loginByUserCenter:(id <IUserCenterListener> _Nonnull)listener;
-/// 收起或关闭用户中心，示例中为关闭当前的用户中心页面。
+/// Collapses or closes the user center; in this example, it closes the current user center page.
 /// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>GuruSdk.collapseUserCenter()</code>
@@ -794,10 +736,10 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///   </li>
 /// </ul>
 + (void)collapseUserCenter;
-/// 展开或打开用户中心，示例中根据是否已登录，显示不同的页面。
+/// Expands or opens the user center; in this example, a different page is displayed depending on whether the user is logged in.
 /// <ul>
 ///   <li>
-///     使用示例:
+///     Example:
 ///     <ul>
 ///       <li>
 ///         <code>GuruSdk.expandUserCenter()</code>
