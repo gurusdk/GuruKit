@@ -629,8 +629,8 @@ __attribute__((swift_name("SkuQueryParams.Builder")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SdkConfig")))
 @interface GuruSharedSdkConfig : GuruSharedBase
-- (instancetype)initWithAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials __attribute__((swift_name("init(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedSdkConfig *)doCopyAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials __attribute__((swift_name("doCopy(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:)")));
+- (instancetype)initWithAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials sdkVersion:(NSString *)sdkVersion __attribute__((swift_name("init(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:sdkVersion:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedSdkConfig *)doCopyAppid:(NSString *)appid channel:(NSString *)channel serverUrl:(NSString * _Nullable)serverUrl googleAuthCredentials:(GuruSharedGoogleAuthCredentials * _Nullable)googleAuthCredentials facebookAuthCredentials:(GuruSharedFacebookAuthCredentials * _Nullable)facebookAuthCredentials sdkVersion:(NSString *)sdkVersion __attribute__((swift_name("doCopy(appid:channel:serverUrl:googleAuthCredentials:facebookAuthCredentials:sdkVersion:)")));
 - (NSString *)dump __attribute__((swift_name("dump()")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -639,6 +639,7 @@ __attribute__((swift_name("SdkConfig")))
 @property (readonly) NSString *channel __attribute__((swift_name("channel")));
 @property (readonly) GuruSharedFacebookAuthCredentials * _Nullable facebookAuthCredentials __attribute__((swift_name("facebookAuthCredentials")));
 @property (readonly) GuruSharedGoogleAuthCredentials * _Nullable googleAuthCredentials __attribute__((swift_name("googleAuthCredentials")));
+@property (readonly) NSString *sdkVersion __attribute__((swift_name("sdkVersion")));
 @property (readonly) NSString * _Nullable serverUrl __attribute__((swift_name("serverUrl")));
 @end
 
@@ -652,6 +653,7 @@ __attribute__((swift_name("SdkConfig.Builder")))
 - (GuruSharedSdkConfigBuilder *)setChannelChannel:(NSString *)channel __attribute__((swift_name("setChannel(channel:)")));
 - (GuruSharedSdkConfigBuilder *)setFacebookAuthCredentialsCredentials:(GuruSharedFacebookAuthCredentials *)credentials __attribute__((swift_name("setFacebookAuthCredentials(credentials:)")));
 - (GuruSharedSdkConfigBuilder *)setGoogleAuthCredentialsCredentials:(GuruSharedGoogleAuthCredentials *)credentials __attribute__((swift_name("setGoogleAuthCredentials(credentials:)")));
+- (GuruSharedSdkConfigBuilder *)setSdkVersionVersion:(NSString *)version __attribute__((swift_name("setSdkVersion(version:)")));
 - (GuruSharedSdkConfigBuilder *)setServerUrlServerUrl:(NSString *)serverUrl __attribute__((swift_name("setServerUrl(serverUrl:)")));
 @end
 
@@ -680,9 +682,11 @@ __attribute__((swift_name("Logger")))
 - (void)debugMessage:(NSString *)message tag:(NSString * _Nullable)tag __attribute__((swift_name("debug(message:tag:)")));
 - (void)errorMessage:(NSString *)message tag:(NSString * _Nullable)tag __attribute__((swift_name("error(message:tag:)")));
 - (int32_t)getLogColorLogLevel:(GuruSharedLoggerLogLevel *)logLevel __attribute__((swift_name("getLogColor(logLevel:)")));
+- (GuruSharedLoggerLogLevel *)getMinLogLevel __attribute__((swift_name("getMinLogLevel()")));
 - (void)infoMessage:(NSString *)message tag:(NSString * _Nullable)tag __attribute__((swift_name("info(message:tag:)")));
 - (BOOL)isEnabled __attribute__((swift_name("isEnabled()")));
 - (void)setEnabledEnabled:(BOOL)enabled __attribute__((swift_name("setEnabled(enabled:)")));
+- (void)setMinLogLevelLevel:(GuruSharedLoggerLogLevel *)level __attribute__((swift_name("setMinLogLevel(level:)")));
 - (void)warnMessage:(NSString *)message tag:(NSString * _Nullable)tag __attribute__((swift_name("warn(message:tag:)")));
 @property (readonly) id<GuruSharedKotlinx_coroutines_coreStateFlow> logCache __attribute__((swift_name("logCache")));
 @end

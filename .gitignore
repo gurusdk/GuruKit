@@ -1,7 +1,51 @@
 .swiftpm
+.DS_Store
+
+# Xcode
 xcuserdata/
 xcshareddata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.xcarchive
+*.ipa
+*.dSYM
+*.app.dSYM
+*.framework.dSYM
+
+# Sample
 Sample/Pods
 Sample/Podfile.lock
 Sample/DerivedData/
 Sample/Sample.xcworkspace
+
+# Security
+*.pem
+*.key
+*.cer
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.env
+config.*.json
+*.plist
+*.entitlements
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+log/
+
+# Temp
+*.swp
+*.swo
+*~
+.temp/
+temp/

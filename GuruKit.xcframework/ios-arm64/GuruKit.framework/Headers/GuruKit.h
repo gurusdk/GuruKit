@@ -2,7 +2,7 @@
 //  GuruKit.h
 //  GuruKit
 //
-//  Created by Renzo on 2024/11/26.
+//  Created by Alan on 2024/11/26.
 //
 
 #import <Foundation/Foundation.h>
