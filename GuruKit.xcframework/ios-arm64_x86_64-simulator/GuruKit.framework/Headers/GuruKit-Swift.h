@@ -361,7 +361,6 @@ SWIFT_CLASS("_TtC7GuruKit20AppleBillingProvider")
 @class UIApplication;
 @class NSURL;
 @class GuruSharedLoginResp;
-@protocol IUserCenterListener;
 
 /// GuruSdk is the public interface class for Objective-C/Swift, providing functionalities such as initialization, login, payment, and event reporting.
 /// note:
@@ -705,49 +704,6 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \endcode</li>
 /// </ul>
 + (void)onAppBackgrounded;
-/// Displays the login page example for the user center.
-/// note:
-///
-/// <ul>
-///   <li>
-///     The view must be presented on the main thread.
-///   </li>
-/// </ul>
-/// <ul>
-///   <li>
-///     Example:
-///     \code
-///     GuruSdk.loginByUserCenter(myListener)
-///
-///     \endcode</li>
-/// </ul>
-/// \param listener A callback listener for the user center login process.
-///
-+ (void)loginByUserCenter:(id <IUserCenterListener> _Nonnull)listener;
-/// Collapses or closes the user center; in this example, it closes the current user center page.
-/// <ul>
-///   <li>
-///     Example:
-///     <ul>
-///       <li>
-///         <code>GuruSdk.collapseUserCenter()</code>
-///       </li>
-///     </ul>
-///   </li>
-/// </ul>
-+ (void)collapseUserCenter;
-/// Expands or opens the user center; in this example, a different page is displayed depending on whether the user is logged in.
-/// <ul>
-///   <li>
-///     Example:
-///     <ul>
-///       <li>
-///         <code>GuruSdk.expandUserCenter()</code>
-///       </li>
-///     </ul>
-///   </li>
-/// </ul>
-+ (void)expandUserCenter;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1154,7 +1110,6 @@ SWIFT_CLASS("_TtC7GuruKit20AppleBillingProvider")
 @class UIApplication;
 @class NSURL;
 @class GuruSharedLoginResp;
-@protocol IUserCenterListener;
 
 /// GuruSdk is the public interface class for Objective-C/Swift, providing functionalities such as initialization, login, payment, and event reporting.
 /// note:
@@ -1498,49 +1453,6 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \endcode</li>
 /// </ul>
 + (void)onAppBackgrounded;
-/// Displays the login page example for the user center.
-/// note:
-///
-/// <ul>
-///   <li>
-///     The view must be presented on the main thread.
-///   </li>
-/// </ul>
-/// <ul>
-///   <li>
-///     Example:
-///     \code
-///     GuruSdk.loginByUserCenter(myListener)
-///
-///     \endcode</li>
-/// </ul>
-/// \param listener A callback listener for the user center login process.
-///
-+ (void)loginByUserCenter:(id <IUserCenterListener> _Nonnull)listener;
-/// Collapses or closes the user center; in this example, it closes the current user center page.
-/// <ul>
-///   <li>
-///     Example:
-///     <ul>
-///       <li>
-///         <code>GuruSdk.collapseUserCenter()</code>
-///       </li>
-///     </ul>
-///   </li>
-/// </ul>
-+ (void)collapseUserCenter;
-/// Expands or opens the user center; in this example, a different page is displayed depending on whether the user is logged in.
-/// <ul>
-///   <li>
-///     Example:
-///     <ul>
-///       <li>
-///         <code>GuruSdk.expandUserCenter()</code>
-///       </li>
-///     </ul>
-///   </li>
-/// </ul>
-+ (void)expandUserCenter;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

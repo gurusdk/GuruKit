@@ -1895,81 +1895,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "loginByUserCenter",
-            "printedName": "loginByUserCenter(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "IUserCenterListener",
-                "printedName": "GuruKit.IUserCenterListener",
-                "usr": "c:@M@GuruKit@objc(pl)IUserCenterListener"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)loginByUserCenter:",
-            "mangledName": "$s7GuruKit0A3SdkC17loginByUserCenteryyAA05IUserG8Listener_pFZ",
-            "moduleName": "GuruKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "collapseUserCenter",
-            "printedName": "collapseUserCenter()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)collapseUserCenter",
-            "mangledName": "$s7GuruKit0A3SdkC18collapseUserCenteryyFZ",
-            "moduleName": "GuruKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "expandUserCenter",
-            "printedName": "expandUserCenter()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)expandUserCenter",
-            "mangledName": "$s7GuruKit0A3SdkC16expandUserCenteryyFZ",
-            "moduleName": "GuruKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -27269,42 +27194,42 @@
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14344,
+      "offset": 14352,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14604,
+      "offset": 14612,
       "length": 53,
       "value": "\"GuruSdk Warning: Unable to get top view controller.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 15260,
+      "offset": 15276,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 15612,
+      "offset": 15628,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "StringLiteral",
-      "offset": 15679,
+      "offset": 15695,
       "length": 53,
       "value": "\"GuruSdk Warning: Unable to get top view controller.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 16052,
+      "offset": 16068,
       "length": 4,
       "value": "true"
     },
@@ -27325,175 +27250,175 @@
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 934,
+      "offset": 994,
       "length": 45,
       "value": "\"https:\/\/www.facebook.com\/v21.0\/dialog\/oauth\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1047,
+      "offset": 1107,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1106,
+      "offset": 1166,
       "length": 14,
       "value": "\"redirect_uri\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 1234,
       "length": 15,
       "value": "\"response_type\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1198,
+      "offset": 1258,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1778,
       "length": 46,
       "value": "\"https:\/\/accounts.google.com\/o\/oauth2\/v2\/auth\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1892,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1891,
+      "offset": 1951,
       "length": 14,
       "value": "\"redirect_uri\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1959,
+      "offset": 2019,
       "length": 15,
       "value": "\"response_type\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2043,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 2024,
+      "offset": 2084,
       "length": 7,
       "value": "\"scope\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 2040,
+      "offset": 2100,
       "length": 57,
       "value": "\"https:\/\/www.googleapis.com\/auth\/userinfo.profile openid\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2495,
       "length": 18,
       "value": "\"auth url: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2512,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
+      "offset": 3273,
       "length": 22,
       "value": "\"auth error: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 3199,
+      "offset": 3294,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3610,
       "length": 16,
       "value": "\"User cancelled\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4289,
+      "offset": 4384,
       "length": 46,
       "value": "\"auth resp: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4331,
+      "offset": 4426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4334,
+      "offset": 4429,
       "length": 12,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4442,
+      "offset": 4537,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4725,
+      "offset": 4820,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4839,
+      "offset": 4934,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4900,
+      "offset": 4995,
       "length": 22,
       "value": "\"auth error: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/WebOAuthManager.swift",
       "kind": "StringLiteral",
-      "offset": 4921,
+      "offset": 5016,
       "length": 12,
       "value": "\"\""
     },
@@ -27517,6 +27442,13 @@
       "offset": 791,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Platform\/DeviceFeatureImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 393,
+      "length": 7,
+      "value": "\"0.0.7\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Extension\/Keychain.swift",

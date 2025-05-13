@@ -62,9 +62,6 @@ extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationCont
   @objc public class func logEvent(name: Swift.String)
   @objc public class func onAppForegrounded()
   @objc public class func onAppBackgrounded()
-  @objc public class func loginByUserCenter(_ listener: any GuruKit.IUserCenterListener)
-  @objc public class func collapseUserCenter()
-  @objc public class func expandUserCenter()
   @objc override dynamic public init()
   @objc deinit
 }

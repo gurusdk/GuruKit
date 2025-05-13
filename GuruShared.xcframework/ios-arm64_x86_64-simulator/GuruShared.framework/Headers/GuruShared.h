@@ -1381,6 +1381,7 @@ __attribute__((swift_name("DarwinDeviceFeature")))
 @required
 - (NSString * _Nullable)getDeviceFeatures __attribute__((swift_name("getDeviceFeatures()")));
 - (NSString *)getDeviceId __attribute__((swift_name("getDeviceId()")));
+- (NSString *)getSdkVersion __attribute__((swift_name("getSdkVersion()")));
 @end
 
 
