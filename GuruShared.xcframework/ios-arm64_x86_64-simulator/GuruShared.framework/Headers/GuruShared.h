@@ -1371,6 +1371,8 @@ __attribute__((swift_name("DarwinBridge")))
 - (void)purchaseParams:(GuruSharedSkuOrderParams *)params onSuccess:(void (^)(NSString *))onSuccess onError:(void (^)(GuruSharedKotlinThrowable *))onError onUserCancelled:(void (^)(void))onUserCancelled __attribute__((swift_name("purchase(params:onSuccess:onError:onUserCancelled:)")));
 - (void)queryAndHandleUnconsumedPurchases __attribute__((swift_name("queryAndHandleUnconsumedPurchases()")));
 - (void)querySkuDetailsParams:(NSArray<GuruSharedSkuQueryParams *> *)params onSuccess:(void (^)(NSArray<GuruSharedSkuDetails *> *))onSuccess onError:(void (^)(GuruSharedKotlinThrowable *))onError __attribute__((swift_name("querySkuDetails(params:onSuccess:onError:)")));
+- (void)setLogEnabledEnabled:(BOOL)enabled __attribute__((swift_name("setLogEnabled(enabled:)")));
+- (void)setLogLevelLevel:(GuruSharedLoggerLogLevel *)level __attribute__((swift_name("setLogLevel(level:)")));
 @property id<GuruSharedDarwinAuthProviderFactory> _Nullable authProviderFactory __attribute__((swift_name("authProviderFactory")));
 @property id<GuruSharedDarwinBillingProviderFactory> _Nullable billingProviderFactory __attribute__((swift_name("billingProviderFactory")));
 @property id<GuruSharedDarwinDeviceFeature> _Nullable deviceFeature __attribute__((swift_name("deviceFeature")));

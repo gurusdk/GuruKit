@@ -1895,6 +1895,64 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setLogEnabled",
+            "printedName": "setLogEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)setLogEnabled:",
+            "mangledName": "$s7GuruKit0A3SdkC13setLogEnabledyySbFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogLevel",
+            "printedName": "setLogLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "GuruShared.Logger.LogLevel",
+                "usr": "c:objc(cs)GuruSharedLoggerLogLevel"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GuruKit@objc(cs)GuruSdk(cm)setLogLevel:",
+            "mangledName": "$s7GuruKit0A3SdkC11setLogLevelyySo0a12SharedLoggereF0CFZ",
+            "moduleName": "GuruKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -26102,441 +26160,616 @@
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1408,
       "length": 24,
       "value": "\"consume product: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
-      "length": 2,
+      "offset": 1431,
+      "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1731,
+      "offset": 1439,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1783,
       "length": 22,
       "value": "\"myPurchaseInfo_\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1804,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3091,
+      "offset": 3143,
       "length": 29,
       "value": "\"myPurchaseInfo_\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3119,
+      "offset": 3171,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3174,
+      "offset": 3226,
       "length": 18,
       "value": "\"developerPayload\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3224,
+      "offset": 3276,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 3293,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 4234,
+      "length": 33,
+      "value": "\"Querying SKU IDs: \""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 4266,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 4274,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 5496,
+      "offset": 5649,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5513,
+      "offset": 5666,
       "length": 33,
       "value": "\"Failed to retrieve receipt data\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5753,
+      "offset": 5906,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5866,
+      "offset": 6019,
       "length": 29,
       "value": "\"myPurchaseInfo_\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5894,
+      "offset": 6047,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6016,
+      "offset": 6169,
       "length": 18,
       "value": "\"developerPayload\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6050,
+      "offset": 6203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 6146,
+      "offset": 6299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6305,
+      "offset": 6458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6390,
+      "offset": 6543,
       "length": 58,
       "value": "\"load payload from cache: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6428,
+      "offset": 6581,
       "length": 2,
       "value": "\" -> \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6447,
+      "offset": 6600,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6455,
+      "offset": 6608,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6609,
+      "offset": 6762,
       "length": 9,
       "value": "\"receipt\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6667,
+      "offset": 6820,
       "length": 15,
       "value": "\"transactionID\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6726,
+      "offset": 6879,
       "length": 11,
       "value": "\"productID\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6785,
+      "offset": 6938,
       "length": 17,
       "value": "\"transactionDate\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6864,
+      "offset": 7017,
       "length": 23,
       "value": "\"originalTransactionId\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 7067,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 6948,
+      "offset": 7101,
       "length": 21,
       "value": "\"applicationUsername\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "Array",
-      "offset": 7137,
+      "offset": 7290,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 7340,
+      "offset": 7493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 7357,
+      "offset": 7510,
       "length": 34,
       "value": "\"Failed to serialize receipt JSON\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7901,
+      "length": 72,
+      "value": "\"Products response valid: \""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7972,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7980,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8041,
+      "length": 67,
+      "value": "\"Products response invalid: \""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8106,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8115,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "Array",
-      "offset": 7756,
+      "offset": 8184,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "Array",
-      "offset": 7801,
+      "offset": 8229,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "Array",
-      "offset": 7848,
+      "offset": 8276,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "Array",
-      "offset": 7895,
+      "offset": 8323,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 8720,
+      "offset": 9148,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9518,
+      "offset": 9755,
+      "length": 19,
+      "value": "\"No products found\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 10154,
       "length": 55,
       "value": "\"Product request failed: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 9572,
-      "length": 2,
+      "offset": 10208,
+      "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10038,
+      "offset": 10216,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 10726,
       "length": 45,
       "value": "\"payment queue update: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10082,
-      "length": 2,
+      "offset": 10770,
+      "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10641,
+      "offset": 10778,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 11358,
       "length": 89,
       "value": "\"Transaction deferred \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10699,
+      "offset": 11416,
       "length": 1,
       "value": "\": waiting for external action.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10737,
+      "offset": 11454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10803,
-      "length": 81,
+      "offset": 11543,
+      "length": 87,
       "value": "\"Transaction purchasing \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10863,
+      "offset": 11606,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 11609,
       "length": 1,
       "value": "\": still in progress.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 10976,
+      "offset": 11637,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 11774,
       "length": 62,
       "value": "\"Unhandled transaction state: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11037,
+      "offset": 11835,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 11843,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12006,
+      "length": 116,
+      "value": "\"Transaction complete: \""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11156,
-      "length": 91,
-      "value": "\"Transaction complete: \""
-    },
-    {
-      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 11215,
+      "offset": 12071,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11246,
+      "offset": 12118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11444,
+      "offset": 12121,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12129,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12348,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11477,
+      "offset": 12381,
       "length": 29,
       "value": "\"myPurchaseInfo_\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11505,
+      "offset": 12409,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11625,
+      "offset": 12529,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11917,
-      "length": 90,
+      "offset": 12844,
+      "length": 115,
       "value": "\"Transaction restore: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 11975,
+      "offset": 12905,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12908,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12006,
+      "offset": 12955,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12141,
-      "length": 55,
+      "offset": 12958,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 12966,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 13145,
+      "length": 61,
       "value": "\"Transaction fail \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12195,
+      "offset": 13202,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12271,
+      "offset": 13205,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 13213,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 13333,
       "length": 50,
       "value": "\"Transaction Error: \""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 12320,
-      "length": 2,
+      "offset": 13382,
+      "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
       "kind": "StringLiteral",
-      "offset": 13076,
+      "offset": 13390,
+      "length": 22,
+      "value": "\"AppleBillingProvider\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Billing\/AppleBillingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 14167,
       "length": 27,
       "value": "\"Unknown transaction error\""
     },
@@ -27180,56 +27413,56 @@
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 13778,
+      "offset": 14387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13827,
+      "offset": 14436,
       "length": 53,
       "value": "\"GuruSdk Warning: Unable to get top view controller.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14352,
+      "offset": 14961,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14612,
+      "offset": 15221,
       "length": 53,
       "value": "\"GuruSdk Warning: Unable to get top view controller.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 15276,
+      "offset": 15885,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 15628,
+      "offset": 16237,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "StringLiteral",
-      "offset": 15695,
+      "offset": 16304,
       "length": 53,
       "value": "\"GuruSdk Warning: Unable to get top view controller.\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/GuruSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 16068,
+      "offset": 16677,
       "length": 4,
       "value": "true"
     },
@@ -27448,7 +27681,7 @@
       "kind": "StringLiteral",
       "offset": 393,
       "length": 7,
-      "value": "\"0.0.7\""
+      "value": "\"0.1.0\""
     },
     {
       "filePath": "\/Users\/renzo\/git\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Extension\/Keychain.swift",

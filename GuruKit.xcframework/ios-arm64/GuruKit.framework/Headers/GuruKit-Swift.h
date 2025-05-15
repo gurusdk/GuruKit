@@ -361,6 +361,7 @@ SWIFT_CLASS("_TtC7GuruKit20AppleBillingProvider")
 @class UIApplication;
 @class NSURL;
 @class GuruSharedLoginResp;
+@class GuruSharedLoggerLogLevel;
 
 /// GuruSdk is the public interface class for Objective-C/Swift, providing functionalities such as initialization, login, payment, and event reporting.
 /// note:
@@ -704,6 +705,34 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///     \endcode</li>
 /// </ul>
 + (void)onAppBackgrounded;
+/// Enables or disables logging functionality.
+/// <ul>
+///   <li>
+///     Example:
+///     <ul>
+///       <li>
+///         <code>GuruSdk.setLogEnabled(true)</code>
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// \param enabled Whether to enable logging.
+///
++ (void)setLogEnabled:(BOOL)enabled;
+/// Sets the minimum log level for filtering log messages.
+/// <ul>
+///   <li>
+///     Example:
+///     <ul>
+///       <li>
+///         <code>GuruSdk.setLogLevel(.DEBUG)</code>
+///       </li>
+///     </ul>
+///   </li>
+/// </ul>
+/// \param level The minimum log level to display.
+///
++ (void)setLogLevel:(GuruSharedLoggerLogLevel * _Nonnull)level;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

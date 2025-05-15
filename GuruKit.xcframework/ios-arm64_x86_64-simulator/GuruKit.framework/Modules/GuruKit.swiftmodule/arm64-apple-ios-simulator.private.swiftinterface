@@ -62,6 +62,8 @@ extension GuruKit.AppleAuthProvider : AuthenticationServices.ASAuthorizationCont
   @objc public class func logEvent(name: Swift.String)
   @objc public class func onAppForegrounded()
   @objc public class func onAppBackgrounded()
+  @objc public class func setLogEnabled(_ enabled: Swift.Bool)
+  @objc public class func setLogLevel(_ level: GuruShared.Logger.LogLevel)
   @objc override dynamic public init()
   @objc deinit
 }
