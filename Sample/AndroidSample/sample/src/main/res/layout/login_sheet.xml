@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Facebook 登录按钮 -->
+    <TextView
+        android:id="@+id/facebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Facebook登录"
+        android:textSize="18sp"
+        android:gravity="center_vertical" />
+
+    <!-- Google 登录按钮 -->
+    <TextView
+        android:id="@+id/googleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Google登录"
+        android:textSize="18sp"
+        android:gravity="center_vertical" />
+
+    <!-- 游客登录按钮 -->
+    <TextView
+        android:id="@+id/guestLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/common_google_signin_btn_icon_dark_normal"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="游客登录"
+        android:textSize="18sp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

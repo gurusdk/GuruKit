@@ -16,12 +16,6 @@ xcshareddata/
 *.app.dSYM
 *.framework.dSYM
 
-# Sample
-Sample/Pods
-Sample/Podfile.lock
-Sample/DerivedData/
-Sample/Sample.xcworkspace
-
 # Security
 *.pem
 *.key
@@ -38,6 +32,10 @@ config.*.json
 .idea/
 .vscode/
 
+# Gradle
+.gradle/
+local.properties
+
 # Logs
 *.log
 logs/
@@ -49,3 +47,4 @@ log/
 *~
 .temp/
 temp/
+Pods/

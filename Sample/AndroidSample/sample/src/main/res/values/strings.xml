@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GuruSample</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- GSdk -->
+    <string name="guru_appid" translatable="false">YOUR_GURU_APP_ID</string>
+    <string name="guru_channel" translatable="false">YOUR_CHANNEL_ID</string>
+    <!-- Google Auth -->
+    <string name="google_client_id" translatable="false">YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com</string>
+    <!-- Facebook Auth -->
+    <string name="facebook_app_id" translatable="false">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token" translatable="false">YOUR_FACEBOOK_CLIENT_TOKEN</string>
+
+</resources>

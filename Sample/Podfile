@@ -1,4 +1,0 @@
-use_frameworks!
-target 'Sample' do
-  pod 'GuruKit', :git => 'https://github.com/gurusdk/GuruKit.git'
-end
