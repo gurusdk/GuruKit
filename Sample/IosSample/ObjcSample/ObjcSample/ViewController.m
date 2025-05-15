@@ -97,7 +97,7 @@
 - (void)queryProductButtonTapped:(UIButton *)sender {
     // 示例：查询一个商品
     GuruSharedSkuQueryParamsBuilder *builder1 = [[GuruSharedSkuQueryParamsBuilder alloc] init];
-    [builder1 setProductIdProductId:@"com.saintess.alliance.299"];
+    [builder1 setProductIdProductId:@"com.sample.sku.1"];
     
     [builder1 setProductTypeProductType:GuruSharedProductType.inapp];
     GuruSharedSkuQueryParams *params1 = [builder1 build];
@@ -113,7 +113,7 @@
 - (void)payButtonTapped:(UIButton *)sender {
     // 示例：先查询商品后购买
     GuruSharedSkuQueryParamsBuilder *builder = [[GuruSharedSkuQueryParamsBuilder alloc] init];
-    [builder setProductIdProductId:@"com.saintess.alliance.299"];
+    [builder setProductIdProductId:@"com.sample.sku.1"];
     [builder setProductTypeProductType:GuruSharedProductType.inapp];
     GuruSharedSkuQueryParams *params = [builder build];
     [GuruSdk querySkuDetails:@[params] onSuccess:^(NSArray<GuruSharedSkuDetails *> *details) {
@@ -125,7 +125,6 @@
             [orderBuilder setProductIdProductId:sku.productId];
             [orderBuilder setProductTypeProductType:sku.productType];
             [orderBuilder setAmountAmount:sku.amount];
-            [orderBuilder setCallbackUrlCallbackUrl:@"callback_url"];
             [orderBuilder setCurrencyCurrency:sku.currency];
             GuruSharedSkuOrderParams *orderParams = [orderBuilder build];
             [GuruSdk purchase:orderParams onSuccess:^(NSString *receipt) {

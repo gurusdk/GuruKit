@@ -115,7 +115,7 @@ public class SampleActivity extends AppCompatActivity {
             public void onClick(View view) {
                 List<SkuQueryParams> list = new ArrayList<SkuQueryParams>();
                 list.add(new SkuQueryParams.Builder()
-                        .setProductId("com.support.1")
+                        .setProductId("com.sample.sku.1")
                         .setProductType(ProductType.INAPP)//默认且仅支持ProductType.INAPP，传其他无效
                         .build());
                 GuruSdk.querySkuDetails(list, new SkuDetailsQueryCallback() {
@@ -128,7 +128,6 @@ public class SampleActivity extends AppCompatActivity {
                                 .setProductId(sku.getProductId())
                                 .setProductType(sku.getProductType())
                                 .setAmount(sku.getAmount())
-                                .setCallbackUrl("callback_url")
                                 .setCurrency(sku.getCurrency());
 
                         SkuOrderParams params = builder.build();

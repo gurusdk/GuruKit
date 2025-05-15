@@ -60,7 +60,7 @@ struct ContentView: View {
     
     func queryProduct() {
         let builder = SkuQueryParams.Builder()
-            .setProductId(productId: "com.saintess.alliance.299")
+            .setProductId(productId: "com.sample.sku.1")
             .setProductType(productType: ProductType.inapp)
         GuruSdk.querySkuDetails([builder.build()]) { details in
             appendLog("商品信息: \(details)")
@@ -71,7 +71,7 @@ struct ContentView: View {
     
     func pay() {
         let builder = SkuQueryParams.Builder()
-            .setProductId(productId: "com.saintess.alliance.299")
+            .setProductId(productId: "com.sample.sku.1")
             .setProductType(productType: ProductType.inapp)
         GuruSdk.querySkuDetails([builder.build()]) { details in
             if let sku = details.first {
@@ -81,7 +81,6 @@ struct ContentView: View {
                     .setProductId(productId: sku.productId)
                     .setProductType(productType: sku.productType)
                     .setAmount(amount: sku.amount)
-                    .setCallbackUrl(callbackUrl: "callback_url")
                     .setCurrency(currency: sku.currency)
                 GuruSdk.purchase(orderBuilder.build()) { receipt in
                     appendLog("购买成功，receipt: \(receipt)")
