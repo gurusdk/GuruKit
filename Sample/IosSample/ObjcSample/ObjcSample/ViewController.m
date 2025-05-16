@@ -97,9 +97,9 @@
 - (void)queryProductButtonTapped:(UIButton *)sender {
     // 示例：查询一个商品
     GuruSharedSkuQueryParamsBuilder *builder1 = [[GuruSharedSkuQueryParamsBuilder alloc] init];
-    [builder1 setProductIdProductId:@"com.sample.sku.1"];
+    [builder1 setProductIdProductId:@"com.sample.sku.1"]; // productId: 在苹果后台配置的商品SKU
+    [builder1 setProductTypeProductType:GuruSharedProductType.inapp]; // productType: 暂时只支持inapp
     
-    [builder1 setProductTypeProductType:GuruSharedProductType.inapp];
     GuruSharedSkuQueryParams *params1 = [builder1 build];
     [GuruSdk querySkuDetails:@[params1] onSuccess:^(NSArray<GuruSharedSkuDetails *> *details) {
         NSLog(@"商品信息: %@", details);
@@ -113,15 +113,14 @@
 - (void)payButtonTapped:(UIButton *)sender {
     // 示例：先查询商品后购买
     GuruSharedSkuQueryParamsBuilder *builder = [[GuruSharedSkuQueryParamsBuilder alloc] init];
-    [builder setProductIdProductId:@"com.sample.sku.1"];
-    [builder setProductTypeProductType:GuruSharedProductType.inapp];
+    [builder setProductIdProductId:@"com.sample.sku.1"]; // productId: 在苹果后台配置的商品SKU
+    [builder setProductTypeProductType:GuruSharedProductType.inapp]; // productType: 暂时只支持inapp
     GuruSharedSkuQueryParams *params = [builder build];
     [GuruSdk querySkuDetails:@[params] onSuccess:^(NSArray<GuruSharedSkuDetails *> *details) {
         if (details.count > 0) {
             GuruSharedSkuDetails *sku = details[0];
-            NSString *orderId = [NSString stringWithFormat:@"%ld", (long)[[NSDate date] timeIntervalSince1970]];
             GuruSharedSkuOrderParamsBuilder *orderBuilder = [[GuruSharedSkuOrderParamsBuilder alloc] init];
-            [orderBuilder setOrderIdOrderId:orderId];
+            [orderBuilder setOrderIdOrderId:@"your_order_id_genrate_by_your_backend"]; // orderId: 接入方后端自己生成管理的订单id
             [orderBuilder setProductIdProductId:sku.productId];
             [orderBuilder setProductTypeProductType:sku.productType];
             [orderBuilder setAmountAmount:sku.amount];
