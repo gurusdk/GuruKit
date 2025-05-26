@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class GuruSharedApiError, GuruSharedApiErrorApiException, GuruSharedApiErrorNetworkError, GuruSharedApiErrorParsingError, GuruSharedApiErrorUnknownError, GuruSharedAppEvent, GuruSharedAppEventCompanion, GuruSharedAppEventRequest, GuruSharedAppEventRequestCompanion, GuruSharedAuthError, GuruSharedAuthErrorCancellation, GuruSharedAuthErrorInvalidCredentials, GuruSharedAuthErrorProviderNotFound, GuruSharedAuthErrorServerError, GuruSharedAuthErrorUnexpectedException, GuruSharedAuthErrorUnknownError, GuruSharedAuthProviderType, GuruSharedAuthToken, GuruSharedBaseRequest, GuruSharedBaseRequestCompanion, GuruSharedBaseResp, GuruSharedBaseRespCompanion, GuruSharedBillingError, GuruSharedBillingErrorCancellation, GuruSharedBillingErrorProviderNotFound, GuruSharedBillingErrorServerError, GuruSharedBillingErrorUnauthorized, GuruSharedBillingErrorUnexpectedBillingResponse, GuruSharedBillingErrorUnexpectedException, GuruSharedBillingErrorUnexpectedQueryResults, GuruSharedBillingErrorUnknownError, GuruSharedBillingProviderType, GuruSharedDarwinBridge, GuruSharedDispatchersX, GuruSharedFacebookAuthCredentials, GuruSharedGoogleAuthCredentials, GuruSharedInitRequest, GuruSharedInitRequestCompanion, GuruSharedInitResp, GuruSharedInitRespCompanion, GuruSharedKoin_coreBeanDefinition<T>, GuruSharedKoin_coreCallbacks<T>, GuruSharedKoin_coreExtensionManager, GuruSharedKoin_coreInstanceContext, GuruSharedKoin_coreInstanceFactory<T>, GuruSharedKoin_coreInstanceFactoryCompanion, GuruSharedKoin_coreInstanceRegistry, GuruSharedKoin_coreKind, GuruSharedKoin_coreKoin, GuruSharedKoin_coreKoinDefinition<R>, GuruSharedKoin_coreLevel, GuruSharedKoin_coreLockable, GuruSharedKoin_coreLogger, GuruSharedKoin_coreModule, GuruSharedKoin_coreParametersHolder, GuruSharedKoin_coreParametersHolderCompanion, GuruSharedKoin_corePropertyRegistry, GuruSharedKoin_coreScope, GuruSharedKoin_coreScopeDSL, GuruSharedKoin_coreScopeRegistry, GuruSharedKoin_coreScopeRegistryCompanion, GuruSharedKoin_coreSingleInstanceFactory<T>, GuruSharedKotlinAbstractCoroutineContextElement, GuruSharedKotlinAbstractCoroutineContextKey<B, E>, GuruSharedKotlinArray<T>, GuruSharedKotlinEnum<E>, GuruSharedKotlinEnumCompanion, GuruSharedKotlinException, GuruSharedKotlinIllegalStateException, GuruSharedKotlinLazyThreadSafetyMode, GuruSharedKotlinNothing, GuruSharedKotlinRuntimeException, GuruSharedKotlinThrowable, GuruSharedKotlinx_coroutines_coreCoroutineDispatcher, GuruSharedKotlinx_coroutines_coreCoroutineDispatcherKey, GuruSharedKotlinx_serialization_coreSerialKind, GuruSharedKotlinx_serialization_coreSerializersModule, GuruSharedKotlinx_serialization_jsonJsonElement, GuruSharedKotlinx_serialization_jsonJsonElementCompanion, GuruSharedLogger, GuruSharedLoggerLogLevel, GuruSharedLoginRequest, GuruSharedLoginRequestCompanion, GuruSharedLoginResp, GuruSharedLoginRespCompanion, GuruSharedOrderRequest, GuruSharedOrderRequestCompanion, GuruSharedOrderResp, GuruSharedOrderRespCompanion, GuruSharedPlatformLogger, GuruSharedProductType, GuruSharedProductTypeCompanion, GuruSharedRefer, GuruSharedReferCompanion, GuruSharedSdkConfig, GuruSharedSdkConfigBuilder, GuruSharedSkuDetails, GuruSharedSkuOrderParams, GuruSharedSkuOrderParamsBuilder, GuruSharedSkuQueryParams, GuruSharedSkuQueryParamsBuilder, GuruSharedStorageKeys, GuruSharedVerifyReceiptRequest, GuruSharedVerifyReceiptRequestCompanion, GuruSharedVerifyReceiptResp, GuruSharedVerifyReceiptRespCompanion;
+@class GuruSharedAppError, GuruSharedAppEvent, GuruSharedAppEventCompanion, GuruSharedAppEventRequest, GuruSharedAppEventRequestCompanion, GuruSharedAuthError, GuruSharedAuthErrorCancellation, GuruSharedAuthErrorInvalidCredentials, GuruSharedAuthErrorProviderNotFound, GuruSharedAuthErrorServerError, GuruSharedAuthErrorUnauthorized, GuruSharedAuthErrorUnexpectedError, GuruSharedAuthErrorUnexpectedException, GuruSharedAuthProviderType, GuruSharedAuthToken, GuruSharedBaseRequest, GuruSharedBaseRequestCompanion, GuruSharedBaseResp, GuruSharedBaseRespCompanion, GuruSharedBillingError, GuruSharedBillingErrorCancellation, GuruSharedBillingErrorProviderNotFound, GuruSharedBillingErrorServerError, GuruSharedBillingErrorUnauthorized, GuruSharedBillingErrorUnexpectedBillingResponse, GuruSharedBillingErrorUnexpectedError, GuruSharedBillingErrorUnexpectedException, GuruSharedBillingErrorUnexpectedQueryResults, GuruSharedBillingProviderType, GuruSharedConfigError, GuruSharedConfigErrorMissingAppId, GuruSharedDarwinBridge, GuruSharedDispatchersX, GuruSharedFacebookAuthCredentials, GuruSharedGoogleAuthCredentials, GuruSharedInitRequest, GuruSharedInitRequestCompanion, GuruSharedInitResp, GuruSharedInitRespCompanion, GuruSharedKoin_coreBeanDefinition<T>, GuruSharedKoin_coreCallbacks<T>, GuruSharedKoin_coreExtensionManager, GuruSharedKoin_coreInstanceContext, GuruSharedKoin_coreInstanceFactory<T>, GuruSharedKoin_coreInstanceFactoryCompanion, GuruSharedKoin_coreInstanceRegistry, GuruSharedKoin_coreKind, GuruSharedKoin_coreKoin, GuruSharedKoin_coreKoinDefinition<R>, GuruSharedKoin_coreLevel, GuruSharedKoin_coreLockable, GuruSharedKoin_coreLogger, GuruSharedKoin_coreModule, GuruSharedKoin_coreParametersHolder, GuruSharedKoin_coreParametersHolderCompanion, GuruSharedKoin_corePropertyRegistry, GuruSharedKoin_coreScope, GuruSharedKoin_coreScopeDSL, GuruSharedKoin_coreScopeRegistry, GuruSharedKoin_coreScopeRegistryCompanion, GuruSharedKoin_coreSingleInstanceFactory<T>, GuruSharedKotlinAbstractCoroutineContextElement, GuruSharedKotlinAbstractCoroutineContextKey<B, E>, GuruSharedKotlinArray<T>, GuruSharedKotlinEnum<E>, GuruSharedKotlinEnumCompanion, GuruSharedKotlinException, GuruSharedKotlinIllegalStateException, GuruSharedKotlinLazyThreadSafetyMode, GuruSharedKotlinNothing, GuruSharedKotlinRuntimeException, GuruSharedKotlinThrowable, GuruSharedKotlinx_coroutines_coreCoroutineDispatcher, GuruSharedKotlinx_coroutines_coreCoroutineDispatcherKey, GuruSharedKotlinx_serialization_coreSerialKind, GuruSharedKotlinx_serialization_coreSerializersModule, GuruSharedKotlinx_serialization_jsonJson, GuruSharedKotlinx_serialization_jsonJsonConfiguration, GuruSharedKotlinx_serialization_jsonJsonDefault, GuruSharedKotlinx_serialization_jsonJsonElement, GuruSharedKotlinx_serialization_jsonJsonElementCompanion, GuruSharedLogger, GuruSharedLoggerLogLevel, GuruSharedLoginRequest, GuruSharedLoginRequestCompanion, GuruSharedLoginResp, GuruSharedLoginRespCompanion, GuruSharedOrderRequest, GuruSharedOrderRequestCompanion, GuruSharedOrderResp, GuruSharedOrderRespCompanion, GuruSharedPlatformLogger, GuruSharedProductType, GuruSharedProductTypeCompanion, GuruSharedRefer, GuruSharedReferCompanion, GuruSharedRemoteError, GuruSharedRemoteErrorApiException, GuruSharedRemoteErrorInvalidParams, GuruSharedRemoteErrorNetworkError, GuruSharedRemoteErrorParsingError, GuruSharedRemoteErrorTimeoutError, GuruSharedRemoteErrorUnknownError, GuruSharedSdkConfig, GuruSharedSdkConfigBuilder, GuruSharedSkuDetails, GuruSharedSkuOrderParams, GuruSharedSkuOrderParamsBuilder, GuruSharedSkuQueryParams, GuruSharedSkuQueryParamsBuilder, GuruSharedStorageKeys, GuruSharedSwitch, GuruSharedSwitchCompanion, GuruSharedVerifyReceiptRequest, GuruSharedVerifyReceiptRequestCompanion, GuruSharedVerifyReceiptResp, GuruSharedVerifyReceiptRespCompanion;
 
-@protocol GuruSharedAuthProvider, GuruSharedCommonCallback, GuruSharedDarwinAuthProvider, GuruSharedDarwinAuthProviderFactory, GuruSharedDarwinBillingProvider, GuruSharedDarwinBillingProviderFactory, GuruSharedDarwinDeviceFeature, GuruSharedIBillingProviderHandler, GuruSharedKoin_coreKoinComponent, GuruSharedKoin_coreKoinExtension, GuruSharedKoin_coreKoinScopeComponent, GuruSharedKoin_coreQualifier, GuruSharedKoin_coreScopeCallback, GuruSharedKotlinAnnotation, GuruSharedKotlinComparable, GuruSharedKotlinContinuation, GuruSharedKotlinContinuationInterceptor, GuruSharedKotlinCoroutineContext, GuruSharedKotlinCoroutineContextElement, GuruSharedKotlinCoroutineContextKey, GuruSharedKotlinIterator, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClass, GuruSharedKotlinKClassifier, GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinLazy, GuruSharedKotlinx_coroutines_coreFlow, GuruSharedKotlinx_coroutines_coreFlowCollector, GuruSharedKotlinx_coroutines_coreRunnable, GuruSharedKotlinx_coroutines_coreSharedFlow, GuruSharedKotlinx_coroutines_coreStateFlow, GuruSharedKotlinx_serialization_coreCompositeDecoder, GuruSharedKotlinx_serialization_coreCompositeEncoder, GuruSharedKotlinx_serialization_coreDecoder, GuruSharedKotlinx_serialization_coreDeserializationStrategy, GuruSharedKotlinx_serialization_coreEncoder, GuruSharedKotlinx_serialization_coreKSerializer, GuruSharedKotlinx_serialization_coreSerialDescriptor, GuruSharedKotlinx_serialization_coreSerializationStrategy, GuruSharedKotlinx_serialization_coreSerializersModuleCollector;
+@protocol GuruSharedAuthProvider, GuruSharedCommonCallback, GuruSharedDarwinAuthProvider, GuruSharedDarwinAuthProviderFactory, GuruSharedDarwinBillingProvider, GuruSharedDarwinBillingProviderFactory, GuruSharedDarwinDeviceFeature, GuruSharedIBillingProviderHandler, GuruSharedKoin_coreKoinComponent, GuruSharedKoin_coreKoinExtension, GuruSharedKoin_coreKoinScopeComponent, GuruSharedKoin_coreQualifier, GuruSharedKoin_coreScopeCallback, GuruSharedKotlinAnnotation, GuruSharedKotlinComparable, GuruSharedKotlinContinuation, GuruSharedKotlinContinuationInterceptor, GuruSharedKotlinCoroutineContext, GuruSharedKotlinCoroutineContextElement, GuruSharedKotlinCoroutineContextKey, GuruSharedKotlinIterator, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClass, GuruSharedKotlinKClassifier, GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinLazy, GuruSharedKotlinx_coroutines_coreFlow, GuruSharedKotlinx_coroutines_coreFlowCollector, GuruSharedKotlinx_coroutines_coreRunnable, GuruSharedKotlinx_coroutines_coreSharedFlow, GuruSharedKotlinx_coroutines_coreStateFlow, GuruSharedKotlinx_serialization_coreCompositeDecoder, GuruSharedKotlinx_serialization_coreCompositeEncoder, GuruSharedKotlinx_serialization_coreDecoder, GuruSharedKotlinx_serialization_coreDeserializationStrategy, GuruSharedKotlinx_serialization_coreEncoder, GuruSharedKotlinx_serialization_coreKSerializer, GuruSharedKotlinx_serialization_coreSerialDescriptor, GuruSharedKotlinx_serialization_coreSerialFormat, GuruSharedKotlinx_serialization_coreSerializationStrategy, GuruSharedKotlinx_serialization_coreSerializersModuleCollector, GuruSharedKotlinx_serialization_coreStringFormat, GuruSharedKotlinx_serialization_jsonJsonNamingStrategy;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -241,13 +241,19 @@ __attribute__((swift_name("KotlinThrowable")))
 - (NSError *)asError __attribute__((swift_name("asError()")));
 @end
 
-__attribute__((swift_name("AuthError")))
-@interface GuruSharedAuthError : GuruSharedKotlinThrowable
+__attribute__((swift_name("AppError")))
+@interface GuruSharedAppError : GuruSharedKotlinThrowable
+- (instancetype)initWithCode:(int32_t)code message:(NSString * _Nullable)message __attribute__((swift_name("init(code:message:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithCause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end
+
+__attribute__((swift_name("AuthError")))
+@interface GuruSharedAuthError : GuruSharedAppError
+- (instancetype)initWithCode:(int32_t)code message:(NSString * _Nullable)message __attribute__((swift_name("init(code:message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -286,13 +292,34 @@ __attribute__((swift_name("AuthError.ProviderNotFound")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AuthError.ServerError")))
 @interface GuruSharedAuthErrorServerError : GuruSharedAuthError
-- (instancetype)initWithException:(GuruSharedKotlinThrowable *)exception __attribute__((swift_name("init(exception:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedAuthErrorServerError *)doCopyException:(GuruSharedKotlinThrowable *)exception __attribute__((swift_name("doCopy(exception:)")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedAuthErrorServerError *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) GuruSharedKotlinThrowable *exception __attribute__((swift_name("exception")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AuthError.Unauthorized")))
+@interface GuruSharedAuthErrorUnauthorized : GuruSharedAuthError
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedAuthErrorUnauthorized *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AuthError.UnexpectedError")))
+@interface GuruSharedAuthErrorUnexpectedError : GuruSharedAuthError
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedAuthErrorUnexpectedError *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -304,18 +331,6 @@ __attribute__((swift_name("AuthError.UnexpectedException")))
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) GuruSharedKotlinThrowable *exception __attribute__((swift_name("exception")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AuthError.UnknownError")))
-@interface GuruSharedAuthErrorUnknownError : GuruSharedAuthError
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedAuthErrorUnknownError *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -460,12 +475,8 @@ __attribute__((swift_name("SkuDetailsQueryCallback")))
 @end
 
 __attribute__((swift_name("BillingError")))
-@interface GuruSharedBillingError : GuruSharedKotlinThrowable
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-- (instancetype)initWithCause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@interface GuruSharedBillingError : GuruSharedAppError
+- (instancetype)initWithCode:(int32_t)code message:(NSString * _Nullable)message __attribute__((swift_name("init(code:message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -487,7 +498,6 @@ __attribute__((swift_name("BillingError.ProviderNotFound")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @property (readonly) GuruSharedBillingProviderType *type __attribute__((swift_name("type")));
 @end
 
@@ -500,7 +510,6 @@ __attribute__((swift_name("BillingError.ServerError")))
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) GuruSharedKotlinThrowable *exception __attribute__((swift_name("exception")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -517,13 +526,23 @@ __attribute__((swift_name("BillingError.Unauthorized")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("BillingError.UnexpectedBillingResponse")))
 @interface GuruSharedBillingErrorUnexpectedBillingResponse : GuruSharedBillingError
-- (instancetype)initWithCode:(int32_t)code debugMessage:(NSString *)debugMessage __attribute__((swift_name("init(code:debugMessage:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedBillingErrorUnexpectedBillingResponse *)doCopyCode:(int32_t)code debugMessage:(NSString *)debugMessage __attribute__((swift_name("doCopy(code:debugMessage:)")));
+- (instancetype)initWithBillingCode:(int32_t)billingCode message:(NSString *)message __attribute__((swift_name("init(billingCode:message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedBillingErrorUnexpectedBillingResponse *)doCopyBillingCode:(int32_t)billingCode message:(NSString *)message __attribute__((swift_name("doCopy(billingCode:message:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t code __attribute__((swift_name("code")));
-@property (readonly) NSString *debugMessage __attribute__((swift_name("debugMessage")));
+@property (readonly) int32_t billingCode __attribute__((swift_name("billingCode")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BillingError.UnexpectedError")))
+@interface GuruSharedBillingErrorUnexpectedError : GuruSharedBillingError
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedBillingErrorUnexpectedError *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @end
 
@@ -536,7 +555,6 @@ __attribute__((swift_name("BillingError.UnexpectedException")))
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) GuruSharedKotlinThrowable *exception __attribute__((swift_name("exception")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -547,19 +565,7 @@ __attribute__((swift_name("BillingError.UnexpectedQueryResults")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @property (readonly) NSString *productId __attribute__((swift_name("productId")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("BillingError.UnknownError")))
-@interface GuruSharedBillingErrorUnknownError : GuruSharedBillingError
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedBillingErrorUnknownError *)doCopyMessage:(NSString * _Nullable)message __attribute__((swift_name("doCopy(message:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -624,6 +630,22 @@ __attribute__((swift_name("SkuQueryParams.Builder")))
 - (GuruSharedSkuQueryParams *)build __attribute__((swift_name("build()")));
 - (GuruSharedSkuQueryParamsBuilder *)setProductIdProductId:(NSString *)productId __attribute__((swift_name("setProductId(productId:)")));
 - (GuruSharedSkuQueryParamsBuilder *)setProductTypeProductType:(GuruSharedProductType *)productType __attribute__((swift_name("setProductType(productType:)")));
+@end
+
+__attribute__((swift_name("ConfigError")))
+@interface GuruSharedConfigError : GuruSharedAppError
+- (instancetype)initWithCode:(int32_t)code message:(NSString * _Nullable)message __attribute__((swift_name("init(code:message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ConfigError.MissingAppId")))
+@interface GuruSharedConfigErrorMissingAppId : GuruSharedConfigError
+- (instancetype)initWithThrowable:(GuruSharedKotlinThrowable * _Nullable)throwable __attribute__((swift_name("init(throwable:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedConfigErrorMissingAppId *)doCopyThrowable:(GuruSharedKotlinThrowable * _Nullable)throwable __attribute__((swift_name("doCopy(throwable:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) GuruSharedKotlinThrowable * _Nullable throwable __attribute__((swift_name("throwable")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -714,62 +736,6 @@ __attribute__((swift_name("PlatformLogger")))
 + (instancetype)platformLogger __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) GuruSharedPlatformLogger *shared __attribute__((swift_name("shared")));
 - (void)logMessage:(NSString *)message level:(GuruSharedLoggerLogLevel *)level tag:(NSString * _Nullable)tag __attribute__((swift_name("log(message:level:tag:)")));
-@end
-
-__attribute__((swift_name("ApiError")))
-@interface GuruSharedApiError : GuruSharedKotlinThrowable
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-- (instancetype)initWithCause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(GuruSharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("ApiError.ApiException")))
-@interface GuruSharedApiErrorApiException : GuruSharedApiError
-- (instancetype)initWithMessage:(NSString *)message code:(int32_t)code __attribute__((swift_name("init(message:code:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedApiErrorApiException *)doCopyMessage:(NSString *)message code:(int32_t)code __attribute__((swift_name("doCopy(message:code:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t code __attribute__((swift_name("code")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("ApiError.NetworkError")))
-@interface GuruSharedApiErrorNetworkError : GuruSharedApiError
-- (instancetype)initWithMessage:(NSString *)message code:(int32_t)code __attribute__((swift_name("init(message:code:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedApiErrorNetworkError *)doCopyMessage:(NSString *)message code:(int32_t)code __attribute__((swift_name("doCopy(message:code:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int32_t code __attribute__((swift_name("code")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("ApiError.ParsingError")))
-@interface GuruSharedApiErrorParsingError : GuruSharedApiError
-- (instancetype)initWithThrowable:(GuruSharedKotlinThrowable *)throwable __attribute__((swift_name("init(throwable:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedApiErrorParsingError *)doCopyThrowable:(GuruSharedKotlinThrowable *)throwable __attribute__((swift_name("doCopy(throwable:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
-@property (readonly) GuruSharedKotlinThrowable *throwable __attribute__((swift_name("throwable")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("ApiError.UnknownError")))
-@interface GuruSharedApiErrorUnknownError : GuruSharedApiError
-- (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (GuruSharedApiErrorUnknownError *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *message __attribute__((swift_name("message")));
 @end
 
 
@@ -935,13 +901,14 @@ __attribute__((swift_name("InitRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitResp")))
 @interface GuruSharedInitResp : GuruSharedBase
-- (instancetype)initWithNewbie:(int32_t)newbie __attribute__((swift_name("init(newbie:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNewbie:(int32_t)newbie switch:(GuruSharedSwitch *)switch_ __attribute__((swift_name("init(newbie:switch:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedInitRespCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedInitResp *)doCopyNewbie:(int32_t)newbie __attribute__((swift_name("doCopy(newbie:)")));
+- (GuruSharedInitResp *)doCopyNewbie:(int32_t)newbie switch:(GuruSharedSwitch *)switch_ __attribute__((swift_name("doCopy(newbie:switch:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) int32_t newbie __attribute__((swift_name("newbie")));
+@property (readonly, getter=switch) GuruSharedSwitch *switch_ __attribute__((swift_name("switch_")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1140,6 +1107,106 @@ __attribute__((swift_name("Refer.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) GuruSharedReferCompanion *shared __attribute__((swift_name("shared")));
+- (id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((swift_name("RemoteError")))
+@interface GuruSharedRemoteError : GuruSharedAppError
+- (instancetype)initWithCode:(int32_t)code message:(NSString * _Nullable)message __attribute__((swift_name("init(code:message:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.ApiException")))
+@interface GuruSharedRemoteErrorApiException : GuruSharedRemoteError
+- (instancetype)initWithErrorMsg:(NSString *)errorMsg errCode:(GuruSharedInt * _Nullable)errCode __attribute__((swift_name("init(errorMsg:errCode:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorApiException *)doCopyErrorMsg:(NSString *)errorMsg errCode:(GuruSharedInt * _Nullable)errCode __attribute__((swift_name("doCopy(errorMsg:errCode:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) GuruSharedInt * _Nullable errCode __attribute__((swift_name("errCode")));
+@property (readonly) NSString *errorMsg __attribute__((swift_name("errorMsg")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.InvalidParams")))
+@interface GuruSharedRemoteErrorInvalidParams : GuruSharedRemoteError
+- (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorInvalidParams *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.NetworkError")))
+@interface GuruSharedRemoteErrorNetworkError : GuruSharedRemoteError
+- (instancetype)initWithResponse:(NSString *)response httpCode:(GuruSharedInt * _Nullable)httpCode __attribute__((swift_name("init(response:httpCode:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorNetworkError *)doCopyResponse:(NSString *)response httpCode:(GuruSharedInt * _Nullable)httpCode __attribute__((swift_name("doCopy(response:httpCode:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) GuruSharedInt * _Nullable httpCode __attribute__((swift_name("httpCode")));
+@property (readonly) NSString *response __attribute__((swift_name("response")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.ParsingError")))
+@interface GuruSharedRemoteErrorParsingError : GuruSharedRemoteError
+- (instancetype)initWithThrowable:(GuruSharedKotlinThrowable *)throwable __attribute__((swift_name("init(throwable:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorParsingError *)doCopyThrowable:(GuruSharedKotlinThrowable *)throwable __attribute__((swift_name("doCopy(throwable:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) GuruSharedKotlinThrowable *throwable __attribute__((swift_name("throwable")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.TimeoutError")))
+@interface GuruSharedRemoteErrorTimeoutError : GuruSharedRemoteError
+- (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorTimeoutError *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("RemoteError.UnknownError")))
+@interface GuruSharedRemoteErrorUnknownError : GuruSharedRemoteError
+- (instancetype)initWithMessage:(NSString *)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (GuruSharedRemoteErrorUnknownError *)doCopyMessage:(NSString *)message __attribute__((swift_name("doCopy(message:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *message __attribute__((swift_name("message")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Switch")))
+@interface GuruSharedSwitch : GuruSharedBase
+- (instancetype)initWithLog:(NSString *)log __attribute__((swift_name("init(log:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) GuruSharedSwitchCompanion *companion __attribute__((swift_name("companion")));
+- (GuruSharedSwitch *)doCopyLog:(NSString *)log __attribute__((swift_name("doCopy(log:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *log __attribute__((swift_name("log")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Switch.Companion")))
+@interface GuruSharedSwitchCompanion : GuruSharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) GuruSharedSwitchCompanion *shared __attribute__((swift_name("shared")));
 - (id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -1405,6 +1472,7 @@ __attribute__((swift_name("ExtensionKt")))
 @interface GuruSharedExtensionKt : GuruSharedBase
 + (NSDictionary<NSString *, GuruSharedKotlinx_serialization_jsonJsonElement *> *)toJsonObject:(id _Nullable)receiver __attribute__((swift_name("toJsonObject(_:)")));
 + (NSString *)toJsonString:(id _Nullable)receiver __attribute__((swift_name("toJsonString(_:)")));
+@property (class, readonly) GuruSharedKotlinx_serialization_jsonJson *json __attribute__((swift_name("json")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1589,6 +1657,32 @@ __attribute__((swift_name("Kotlinx_serialization_jsonJsonElement.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) GuruSharedKotlinx_serialization_jsonJsonElementCompanion *shared __attribute__((swift_name("shared")));
 - (id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreSerialFormat")))
+@protocol GuruSharedKotlinx_serialization_coreSerialFormat
+@required
+@property (readonly) GuruSharedKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_coreStringFormat")))
+@protocol GuruSharedKotlinx_serialization_coreStringFormat <GuruSharedKotlinx_serialization_coreSerialFormat>
+@required
+- (id _Nullable)decodeFromStringDeserializer:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy>)deserializer string:(NSString *)string __attribute__((swift_name("decodeFromString(deserializer:string:)")));
+- (NSString *)encodeToStringSerializer:(id<GuruSharedKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeToString(serializer:value:)")));
+@end
+
+__attribute__((swift_name("Kotlinx_serialization_jsonJson")))
+@interface GuruSharedKotlinx_serialization_jsonJson : GuruSharedBase <GuruSharedKotlinx_serialization_coreStringFormat>
+@property (class, readonly, getter=companion) GuruSharedKotlinx_serialization_jsonJsonDefault *companion __attribute__((swift_name("companion")));
+- (id _Nullable)decodeFromJsonElementDeserializer:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy>)deserializer element:(GuruSharedKotlinx_serialization_jsonJsonElement *)element __attribute__((swift_name("decodeFromJsonElement(deserializer:element:)")));
+- (id _Nullable)decodeFromStringString:(NSString *)string __attribute__((swift_name("decodeFromString(string:)")));
+- (id _Nullable)decodeFromStringDeserializer:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy>)deserializer string:(NSString *)string __attribute__((swift_name("decodeFromString(deserializer:string:)")));
+- (GuruSharedKotlinx_serialization_jsonJsonElement *)encodeToJsonElementSerializer:(id<GuruSharedKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeToJsonElement(serializer:value:)")));
+- (NSString *)encodeToStringSerializer:(id<GuruSharedKotlinx_serialization_coreSerializationStrategy>)serializer value:(id _Nullable)value __attribute__((swift_name("encodeToString(serializer:value:)")));
+- (GuruSharedKotlinx_serialization_jsonJsonElement *)parseToJsonElementString:(NSString *)string __attribute__((swift_name("parseToJsonElement(string:)")));
+@property (readonly) GuruSharedKotlinx_serialization_jsonJsonConfiguration *configuration __attribute__((swift_name("configuration")));
+@property (readonly) GuruSharedKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -1823,6 +1917,77 @@ __attribute__((swift_name("Kotlinx_coroutines_coreRunnable")))
 - (void)run __attribute__((swift_name("run()")));
 @end
 
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
+@interface GuruSharedKotlinx_serialization_coreSerializersModule : GuruSharedBase
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (void)dumpToCollector:(id<GuruSharedKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<GuruSharedKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<GuruSharedKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<GuruSharedKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<GuruSharedKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+- (id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable)getPolymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass serializedClassName:(NSString * _Nullable)serializedClassName __attribute__((swift_name("getPolymorphic(baseClass:serializedClassName:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJson.Default")))
+@interface GuruSharedKotlinx_serialization_jsonJsonDefault : GuruSharedKotlinx_serialization_jsonJson
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)default_ __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) GuruSharedKotlinx_serialization_jsonJsonDefault *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonConfiguration")))
+@interface GuruSharedKotlinx_serialization_jsonJsonConfiguration : GuruSharedBase
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL allowSpecialFloatingPointValues __attribute__((swift_name("allowSpecialFloatingPointValues")));
+@property (readonly) BOOL allowStructuredMapKeys __attribute__((swift_name("allowStructuredMapKeys")));
+@property (readonly) NSString *classDiscriminator __attribute__((swift_name("classDiscriminator")));
+@property (readonly) BOOL coerceInputValues __attribute__((swift_name("coerceInputValues")));
+@property (readonly) BOOL encodeDefaults __attribute__((swift_name("encodeDefaults")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) BOOL explicitNulls __attribute__((swift_name("explicitNulls")));
+@property (readonly) BOOL ignoreUnknownKeys __attribute__((swift_name("ignoreUnknownKeys")));
+@property (readonly) BOOL isLenient __attribute__((swift_name("isLenient")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) id<GuruSharedKotlinx_serialization_jsonJsonNamingStrategy> _Nullable namingStrategy __attribute__((swift_name("namingStrategy")));
+@property (readonly) BOOL prettyPrint __attribute__((swift_name("prettyPrint")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+@property (readonly) NSString *prettyPrintIndent __attribute__((swift_name("prettyPrintIndent")));
+@property (readonly) BOOL useAlternativeNames __attribute__((swift_name("useAlternativeNames")));
+@property (readonly) BOOL useArrayPolymorphism __attribute__((swift_name("useArrayPolymorphism")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreKoinDefinition")))
 @interface GuruSharedKoin_coreKoinDefinition<R> : GuruSharedBase
@@ -1977,34 +2142,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
 @property (readonly) GuruSharedKotlinx_serialization_coreSerializersModule *serializersModule __attribute__((swift_name("serializersModule")));
 @end
 
-__attribute__((swift_name("Kotlinx_serialization_coreSerializersModule")))
-@interface GuruSharedKotlinx_serialization_coreSerializersModule : GuruSharedBase
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (void)dumpToCollector:(id<GuruSharedKotlinx_serialization_coreSerializersModuleCollector>)collector __attribute__((swift_name("dumpTo(collector:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<GuruSharedKotlinx_serialization_coreKSerializer> _Nullable)getContextualKClass:(id<GuruSharedKotlinKClass>)kClass typeArgumentsSerializers:(NSArray<id<GuruSharedKotlinx_serialization_coreKSerializer>> *)typeArgumentsSerializers __attribute__((swift_name("getContextual(kClass:typeArgumentsSerializers:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<GuruSharedKotlinx_serialization_coreSerializationStrategy> _Nullable)getPolymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass value:(id)value __attribute__((swift_name("getPolymorphic(baseClass:value:)")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-- (id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable)getPolymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass serializedClassName:(NSString * _Nullable)serializedClassName __attribute__((swift_name("getPolymorphic(baseClass:serializedClassName:)")));
-@end
-
 __attribute__((swift_name("KotlinAnnotation")))
 @protocol GuruSharedKotlinAnnotation
 @required
@@ -2058,6 +2195,66 @@ __attribute__((swift_name("KotlinNothing")))
 @interface GuruSharedKotlinNothing : GuruSharedBase
 @end
 
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
+@protocol GuruSharedKotlinx_serialization_coreSerializersModuleCollector
+@required
+- (void)contextualKClass:(id<GuruSharedKotlinKClass>)kClass provider:(id<GuruSharedKotlinx_serialization_coreKSerializer> (^)(NSArray<id<GuruSharedKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
+- (void)contextualKClass:(id<GuruSharedKotlinKClass>)kClass serializer:(id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
+- (void)polymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass actualClass:(id<GuruSharedKotlinKClass>)actualClass actualSerializer:(id<GuruSharedKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
+- (void)polymorphicDefaultBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultDeserializerProvider:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
+- (void)polymorphicDefaultDeserializerBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultDeserializerProvider:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
+- (void)polymorphicDefaultSerializerBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultSerializerProvider:(id<GuruSharedKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
+@end
+
+__attribute__((swift_name("KotlinKDeclarationContainer")))
+@protocol GuruSharedKotlinKDeclarationContainer
+@required
+@end
+
+__attribute__((swift_name("KotlinKAnnotatedElement")))
+@protocol GuruSharedKotlinKAnnotatedElement
+@required
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.1")
+*/
+__attribute__((swift_name("KotlinKClassifier")))
+@protocol GuruSharedKotlinKClassifier
+@required
+@end
+
+__attribute__((swift_name("KotlinKClass")))
+@protocol GuruSharedKotlinKClass <GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClassifier>
+@required
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.1")
+*/
+- (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
+@property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
+@property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.ExperimentalSerializationApi
+*/
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonNamingStrategy")))
+@protocol GuruSharedKotlinx_serialization_jsonJsonNamingStrategy
+@required
+- (NSString *)serialNameForJsonDescriptor:(id<GuruSharedKotlinx_serialization_coreSerialDescriptor>)descriptor elementIndex:(int32_t)elementIndex serialName:(NSString *)serialName __attribute__((swift_name("serialNameForJson(descriptor:elementIndex:serialName:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Koin_coreKoin")))
 @interface GuruSharedKoin_coreKoin : GuruSharedBase
@@ -2094,39 +2291,6 @@ __attribute__((swift_name("Koin_coreKoin")))
 @property (readonly) GuruSharedKoin_coreLogger *logger __attribute__((swift_name("logger")));
 @property (readonly) GuruSharedKoin_corePropertyRegistry *propertyRegistry __attribute__((swift_name("propertyRegistry")));
 @property (readonly) GuruSharedKoin_coreScopeRegistry *scopeRegistry __attribute__((swift_name("scopeRegistry")));
-@end
-
-__attribute__((swift_name("KotlinKDeclarationContainer")))
-@protocol GuruSharedKotlinKDeclarationContainer
-@required
-@end
-
-__attribute__((swift_name("KotlinKAnnotatedElement")))
-@protocol GuruSharedKotlinKAnnotatedElement
-@required
-@end
-
-
-/**
- * @note annotations
- *   kotlin.SinceKotlin(version="1.1")
-*/
-__attribute__((swift_name("KotlinKClassifier")))
-@protocol GuruSharedKotlinKClassifier
-@required
-@end
-
-__attribute__((swift_name("KotlinKClass")))
-@protocol GuruSharedKotlinKClass <GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClassifier>
-@required
-
-/**
- * @note annotations
- *   kotlin.SinceKotlin(version="1.1")
-*/
-- (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
-@property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
-@property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
 @end
 
 __attribute__((swift_name("KotlinLazy")))
@@ -2215,22 +2379,6 @@ __attribute__((swift_name("Koin_coreInstanceContext")))
 @property (readonly) GuruSharedKoin_coreLogger *logger __attribute__((swift_name("logger")));
 @property (readonly) GuruSharedKoin_coreParametersHolder * _Nullable parameters __attribute__((swift_name("parameters")));
 @property (readonly) GuruSharedKoin_coreScope *scope __attribute__((swift_name("scope")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.ExperimentalSerializationApi
-*/
-__attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
-@protocol GuruSharedKotlinx_serialization_coreSerializersModuleCollector
-@required
-- (void)contextualKClass:(id<GuruSharedKotlinKClass>)kClass provider:(id<GuruSharedKotlinx_serialization_coreKSerializer> (^)(NSArray<id<GuruSharedKotlinx_serialization_coreKSerializer>> *))provider __attribute__((swift_name("contextual(kClass:provider:)")));
-- (void)contextualKClass:(id<GuruSharedKotlinKClass>)kClass serializer:(id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("contextual(kClass:serializer:)")));
-- (void)polymorphicBaseClass:(id<GuruSharedKotlinKClass>)baseClass actualClass:(id<GuruSharedKotlinKClass>)actualClass actualSerializer:(id<GuruSharedKotlinx_serialization_coreKSerializer>)actualSerializer __attribute__((swift_name("polymorphic(baseClass:actualClass:actualSerializer:)")));
-- (void)polymorphicDefaultBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultDeserializerProvider:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefault(baseClass:defaultDeserializerProvider:)"))) __attribute__((deprecated("Deprecated in favor of function with more precise name: polymorphicDefaultDeserializer")));
-- (void)polymorphicDefaultDeserializerBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultDeserializerProvider:(id<GuruSharedKotlinx_serialization_coreDeserializationStrategy> _Nullable (^)(NSString * _Nullable))defaultDeserializerProvider __attribute__((swift_name("polymorphicDefaultDeserializer(baseClass:defaultDeserializerProvider:)")));
-- (void)polymorphicDefaultSerializerBaseClass:(id<GuruSharedKotlinKClass>)baseClass defaultSerializerProvider:(id<GuruSharedKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
 @end
 
 __attribute__((swift_name("Koin_coreKoinComponent")))

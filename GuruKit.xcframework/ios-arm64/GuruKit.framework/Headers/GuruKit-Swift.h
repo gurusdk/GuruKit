@@ -600,7 +600,6 @@ SWIFT_CLASS("_TtC7GuruKit7GuruSdk")
 ///                  .setProductId(productId: sku.productId)
 ///                  .setProductType(productType: sku.productType)
 ///                  .setAmount(amount: sku.amount)
-///                  .setCallbackUrl(callbackUrl: "callback_url")
 ///                  .setCurrency(currency: sku.currency)
 ///              GuruSdk.purchase(builder.build()) { receipt in
 ///                  // Handle successful purchase

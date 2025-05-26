@@ -60,8 +60,8 @@ struct ContentView: View {
     
     func queryProduct() {
         let builder = SkuQueryParams.Builder()
-            .setProductId(productId: "com.sample.sku.1") // productId: 在苹果后台配置的商品SKU
-            .setProductType(productType: ProductType.inapp) // productType: 暂时只支持inapp
+            .setProductId(productId: "com.sample.sku.1")
+            .setProductType(productType: ProductType.inapp)
         GuruSdk.querySkuDetails([builder.build()]) { details in
             appendLog("商品信息: \(details)")
         } onError: { error in
@@ -71,12 +71,13 @@ struct ContentView: View {
     
     func pay() {
         let builder = SkuQueryParams.Builder()
-            .setProductId(productId: "com.sample.sku.1") // productId: 在苹果后台配置的商品SKU
-            .setProductType(productType: ProductType.inapp) // productType: 暂时只支持inapp
+            .setProductId(productId: "com.sample.sku.1")
+            .setProductType(productType: ProductType.inapp)
         GuruSdk.querySkuDetails([builder.build()]) { details in
             if let sku = details.first {
+                let orderId = String(Int(Date().timeIntervalSince1970))
                 let orderBuilder = SkuOrderParams.Builder()
-                    .setOrderId(orderId: "your_order_id_genrate_by_your_backend") // orderId: 接入方后端自己生成管理的订单id
+                    .setOrderId(orderId: orderId)
                     .setProductId(productId: sku.productId)
                     .setProductType(productType: sku.productType)
                     .setAmount(amount: sku.amount)
