@@ -115,16 +115,15 @@ public class SampleActivity extends AppCompatActivity {
             public void onClick(View view) {
                 List<SkuQueryParams> list = new ArrayList<SkuQueryParams>();
                 list.add(new SkuQueryParams.Builder()
-                        .setProductId("com.sample.sku.1")
-                        .setProductType(ProductType.INAPP)//默认且仅支持ProductType.INAPP，传其他无效
+                        .setProductId("com.sample.sku.1") //在Google Play后台配置的商品SKU
+                        .setProductType(ProductType.INAPP) //默认且仅支持ProductType.INAPP，传其他无效
                         .build());
                 GuruSdk.querySkuDetails(list, new SkuDetailsQueryCallback() {
                     @Override
                     public void onSuccess(@NonNull List<SkuDetails> skuDetails) {
                         SkuDetails sku = skuDetails.get(0);
                         SkuOrderParams.Builder builder = new SkuOrderParams.Builder();
-                        long orderid = System.currentTimeMillis() / 1000;
-                        builder.setOrderId(String.valueOf(orderid))
+                        builder.setOrderId("your_order_id_genrate_by_your_backend") //接入方后端自己生成管理的订单id
                                 .setProductId(sku.getProductId())
                                 .setProductType(sku.getProductType())
                                 .setAmount(sku.getAmount())

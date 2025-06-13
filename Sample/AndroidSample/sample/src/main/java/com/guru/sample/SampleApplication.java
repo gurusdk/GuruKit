@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 import com.guru.android.GuruSdk;
 import com.guru.common.interfaces.CommonCallback;
-//import com.guru.common.log.Logger;
+import com.guru.common.log.Logger;
 
 public class SampleApplication extends Application {
     @Override
@@ -25,7 +25,7 @@ public class SampleApplication extends Application {
                 Log.d("TAG", "SDK initialize failed:" + error.getMessage());
             }
         });
-        // GuruSdk.setLogEnabled(true);
-        // GuruSdk.setLogLevel(Logger.LogLevel.DEBUG);
+         GuruSdk.setLogEnabled(false);
+         GuruSdk.setLogLevel(Logger.LogLevel.DEBUG);
     }
 }
