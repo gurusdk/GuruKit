@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GuruKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppTrackingTransparency
 import AuthenticationServices
 import Foundation
 @_exported import GuruKit
@@ -27,6 +28,14 @@ import _SwiftConcurrencyShims
   @objc public func productsRequest(_ request: StoreKit.SKProductsRequest, didReceive response: StoreKit.SKProductsResponse)
   @objc public func request(_ request: StoreKit.SKRequest, didFailWithError error: any Swift.Error)
   @objc public func paymentQueue(_ queue: StoreKit.SKPaymentQueue, updatedTransactions transactions: [StoreKit.SKPaymentTransaction])
+}
+@_hasMissingDesignatedInitializers public class FacebookAuthProvider : GuruShared.DarwinAuthProvider {
+  @objc public var type: GuruShared.AuthProviderType {
+    @objc get
+  }
+  @objc public func login(onSuccess: @escaping (GuruShared.AuthToken) -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
+  @objc public func logout(onSuccess: @escaping () -> Swift.Void, onError: @escaping (GuruShared.KotlinThrowable) -> Swift.Void)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AppleAuthProvider : ObjectiveC.NSObject, GuruShared.DarwinAuthProvider {
   @objc public var type: GuruShared.AuthProviderType {

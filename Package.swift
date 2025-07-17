@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/gurusdk/GuruKit.git", from: "0.1.1"),
+        .package(url: "https://github.com/gurusdk/GuruKit.git", from: "0.2.2"),
     ],
     targets: [
         .binaryTarget(

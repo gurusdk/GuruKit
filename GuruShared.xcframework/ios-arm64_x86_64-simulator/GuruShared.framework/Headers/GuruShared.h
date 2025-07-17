@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class GuruSharedAppError, GuruSharedAppEvent, GuruSharedAppEventCompanion, GuruSharedAppEventRequest, GuruSharedAppEventRequestCompanion, GuruSharedAuthError, GuruSharedAuthErrorCancellation, GuruSharedAuthErrorInvalidCredentials, GuruSharedAuthErrorProviderNotFound, GuruSharedAuthErrorServerError, GuruSharedAuthErrorUnauthorized, GuruSharedAuthErrorUnexpectedError, GuruSharedAuthErrorUnexpectedException, GuruSharedAuthProviderType, GuruSharedAuthToken, GuruSharedBaseRequest, GuruSharedBaseRequestCompanion, GuruSharedBaseResp, GuruSharedBaseRespCompanion, GuruSharedBillingError, GuruSharedBillingErrorCancellation, GuruSharedBillingErrorProviderNotFound, GuruSharedBillingErrorServerError, GuruSharedBillingErrorUnauthorized, GuruSharedBillingErrorUnexpectedBillingResponse, GuruSharedBillingErrorUnexpectedError, GuruSharedBillingErrorUnexpectedException, GuruSharedBillingErrorUnexpectedQueryResults, GuruSharedBillingProviderType, GuruSharedConfigError, GuruSharedConfigErrorMissingAppId, GuruSharedDarwinBridge, GuruSharedDispatchersX, GuruSharedFacebookAuthCredentials, GuruSharedGoogleAuthCredentials, GuruSharedInitRequest, GuruSharedInitRequestCompanion, GuruSharedInitResp, GuruSharedInitRespCompanion, GuruSharedKoin_coreBeanDefinition<T>, GuruSharedKoin_coreCallbacks<T>, GuruSharedKoin_coreExtensionManager, GuruSharedKoin_coreInstanceContext, GuruSharedKoin_coreInstanceFactory<T>, GuruSharedKoin_coreInstanceFactoryCompanion, GuruSharedKoin_coreInstanceRegistry, GuruSharedKoin_coreKind, GuruSharedKoin_coreKoin, GuruSharedKoin_coreKoinDefinition<R>, GuruSharedKoin_coreLevel, GuruSharedKoin_coreLockable, GuruSharedKoin_coreLogger, GuruSharedKoin_coreModule, GuruSharedKoin_coreParametersHolder, GuruSharedKoin_coreParametersHolderCompanion, GuruSharedKoin_corePropertyRegistry, GuruSharedKoin_coreScope, GuruSharedKoin_coreScopeDSL, GuruSharedKoin_coreScopeRegistry, GuruSharedKoin_coreScopeRegistryCompanion, GuruSharedKoin_coreSingleInstanceFactory<T>, GuruSharedKotlinAbstractCoroutineContextElement, GuruSharedKotlinAbstractCoroutineContextKey<B, E>, GuruSharedKotlinArray<T>, GuruSharedKotlinEnum<E>, GuruSharedKotlinEnumCompanion, GuruSharedKotlinException, GuruSharedKotlinIllegalStateException, GuruSharedKotlinLazyThreadSafetyMode, GuruSharedKotlinNothing, GuruSharedKotlinRuntimeException, GuruSharedKotlinThrowable, GuruSharedKotlinx_coroutines_coreCoroutineDispatcher, GuruSharedKotlinx_coroutines_coreCoroutineDispatcherKey, GuruSharedKotlinx_serialization_coreSerialKind, GuruSharedKotlinx_serialization_coreSerializersModule, GuruSharedKotlinx_serialization_jsonJson, GuruSharedKotlinx_serialization_jsonJsonConfiguration, GuruSharedKotlinx_serialization_jsonJsonDefault, GuruSharedKotlinx_serialization_jsonJsonElement, GuruSharedKotlinx_serialization_jsonJsonElementCompanion, GuruSharedLogger, GuruSharedLoggerLogLevel, GuruSharedLoginRequest, GuruSharedLoginRequestCompanion, GuruSharedLoginResp, GuruSharedLoginRespCompanion, GuruSharedOrderRequest, GuruSharedOrderRequestCompanion, GuruSharedOrderResp, GuruSharedOrderRespCompanion, GuruSharedPlatformLogger, GuruSharedProductType, GuruSharedProductTypeCompanion, GuruSharedRefer, GuruSharedReferCompanion, GuruSharedRemoteError, GuruSharedRemoteErrorApiException, GuruSharedRemoteErrorInvalidParams, GuruSharedRemoteErrorNetworkError, GuruSharedRemoteErrorParsingError, GuruSharedRemoteErrorTimeoutError, GuruSharedRemoteErrorUnknownError, GuruSharedSdkConfig, GuruSharedSdkConfigBuilder, GuruSharedSkuDetails, GuruSharedSkuOrderParams, GuruSharedSkuOrderParamsBuilder, GuruSharedSkuQueryParams, GuruSharedSkuQueryParamsBuilder, GuruSharedStorageKeys, GuruSharedSwitch, GuruSharedSwitchCompanion, GuruSharedVerifyReceiptRequest, GuruSharedVerifyReceiptRequestCompanion, GuruSharedVerifyReceiptResp, GuruSharedVerifyReceiptRespCompanion;
+@class GuruSharedAppError, GuruSharedAppEvent, GuruSharedAppEventCompanion, GuruSharedAppEventRequest, GuruSharedAppEventRequestCompanion, GuruSharedAuthError, GuruSharedAuthErrorCancellation, GuruSharedAuthErrorInvalidCredentials, GuruSharedAuthErrorProviderNotFound, GuruSharedAuthErrorServerError, GuruSharedAuthErrorUnauthorized, GuruSharedAuthErrorUnexpectedError, GuruSharedAuthErrorUnexpectedException, GuruSharedAuthProviderType, GuruSharedAuthToken, GuruSharedBaseRequest, GuruSharedBaseRequestCompanion, GuruSharedBaseResp, GuruSharedBaseRespCompanion, GuruSharedBillingError, GuruSharedBillingErrorCancellation, GuruSharedBillingErrorProviderNotFound, GuruSharedBillingErrorServerError, GuruSharedBillingErrorUnauthorized, GuruSharedBillingErrorUnexpectedBillingResponse, GuruSharedBillingErrorUnexpectedError, GuruSharedBillingErrorUnexpectedException, GuruSharedBillingErrorUnexpectedQueryResults, GuruSharedBillingProviderType, GuruSharedConfigError, GuruSharedConfigErrorMissingAppId, GuruSharedDarwinBridge, GuruSharedDispatchersX, GuruSharedFacebookAuthCredentials, GuruSharedGoogleAuthCredentials, GuruSharedInitRequest, GuruSharedInitRequestCompanion, GuruSharedInitResp, GuruSharedInitRespCompanion, GuruSharedKoin_coreBeanDefinition<T>, GuruSharedKoin_coreCallbacks<T>, GuruSharedKoin_coreExtensionManager, GuruSharedKoin_coreInstanceContext, GuruSharedKoin_coreInstanceFactory<T>, GuruSharedKoin_coreInstanceFactoryCompanion, GuruSharedKoin_coreInstanceRegistry, GuruSharedKoin_coreKind, GuruSharedKoin_coreKoin, GuruSharedKoin_coreKoinDefinition<R>, GuruSharedKoin_coreLevel, GuruSharedKoin_coreLockable, GuruSharedKoin_coreLogger, GuruSharedKoin_coreModule, GuruSharedKoin_coreParametersHolder, GuruSharedKoin_coreParametersHolderCompanion, GuruSharedKoin_corePropertyRegistry, GuruSharedKoin_coreScope, GuruSharedKoin_coreScopeDSL, GuruSharedKoin_coreScopeRegistry, GuruSharedKoin_coreScopeRegistryCompanion, GuruSharedKoin_coreSingleInstanceFactory<T>, GuruSharedKotlinAbstractCoroutineContextElement, GuruSharedKotlinAbstractCoroutineContextKey<B, E>, GuruSharedKotlinArray<T>, GuruSharedKotlinEnum<E>, GuruSharedKotlinEnumCompanion, GuruSharedKotlinException, GuruSharedKotlinIllegalStateException, GuruSharedKotlinLazyThreadSafetyMode, GuruSharedKotlinNothing, GuruSharedKotlinRuntimeException, GuruSharedKotlinThrowable, GuruSharedKotlinx_coroutines_coreCoroutineDispatcher, GuruSharedKotlinx_coroutines_coreCoroutineDispatcherKey, GuruSharedKotlinx_serialization_coreSerialKind, GuruSharedKotlinx_serialization_coreSerializersModule, GuruSharedKotlinx_serialization_jsonJson, GuruSharedKotlinx_serialization_jsonJsonConfiguration, GuruSharedKotlinx_serialization_jsonJsonDefault, GuruSharedKotlinx_serialization_jsonJsonElement, GuruSharedKotlinx_serialization_jsonJsonElementCompanion, GuruSharedLogger, GuruSharedLoggerLogLevel, GuruSharedLoginRequest, GuruSharedLoginRequestCompanion, GuruSharedLoginResp, GuruSharedLoginRespCompanion, GuruSharedOrderRequest, GuruSharedOrderRequestCompanion, GuruSharedOrderResp, GuruSharedOrderRespCompanion, GuruSharedPlatformLogger, GuruSharedProductType, GuruSharedProductTypeCompanion, GuruSharedRefer, GuruSharedReferCompanion, GuruSharedRemoteError, GuruSharedRemoteErrorApiException, GuruSharedRemoteErrorInvalidParams, GuruSharedRemoteErrorNetworkError, GuruSharedRemoteErrorParsingError, GuruSharedRemoteErrorTimeoutError, GuruSharedRemoteErrorUnknownError, GuruSharedSdkConfig, GuruSharedSdkConfigBuilder, GuruSharedSkuDetails, GuruSharedSkuOrderParams, GuruSharedSkuOrderParamsBuilder, GuruSharedSkuQueryParams, GuruSharedSkuQueryParamsBuilder, GuruSharedStorageKeys, GuruSharedTimeUtils, GuruSharedVerifyReceiptRequest, GuruSharedVerifyReceiptRequestCompanion, GuruSharedVerifyReceiptResp, GuruSharedVerifyReceiptRespCompanion;
 
-@protocol GuruSharedAuthProvider, GuruSharedCommonCallback, GuruSharedDarwinAuthProvider, GuruSharedDarwinAuthProviderFactory, GuruSharedDarwinBillingProvider, GuruSharedDarwinBillingProviderFactory, GuruSharedDarwinDeviceFeature, GuruSharedIBillingProviderHandler, GuruSharedKoin_coreKoinComponent, GuruSharedKoin_coreKoinExtension, GuruSharedKoin_coreKoinScopeComponent, GuruSharedKoin_coreQualifier, GuruSharedKoin_coreScopeCallback, GuruSharedKotlinAnnotation, GuruSharedKotlinComparable, GuruSharedKotlinContinuation, GuruSharedKotlinContinuationInterceptor, GuruSharedKotlinCoroutineContext, GuruSharedKotlinCoroutineContextElement, GuruSharedKotlinCoroutineContextKey, GuruSharedKotlinIterator, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClass, GuruSharedKotlinKClassifier, GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinLazy, GuruSharedKotlinx_coroutines_coreFlow, GuruSharedKotlinx_coroutines_coreFlowCollector, GuruSharedKotlinx_coroutines_coreRunnable, GuruSharedKotlinx_coroutines_coreSharedFlow, GuruSharedKotlinx_coroutines_coreStateFlow, GuruSharedKotlinx_serialization_coreCompositeDecoder, GuruSharedKotlinx_serialization_coreCompositeEncoder, GuruSharedKotlinx_serialization_coreDecoder, GuruSharedKotlinx_serialization_coreDeserializationStrategy, GuruSharedKotlinx_serialization_coreEncoder, GuruSharedKotlinx_serialization_coreKSerializer, GuruSharedKotlinx_serialization_coreSerialDescriptor, GuruSharedKotlinx_serialization_coreSerialFormat, GuruSharedKotlinx_serialization_coreSerializationStrategy, GuruSharedKotlinx_serialization_coreSerializersModuleCollector, GuruSharedKotlinx_serialization_coreStringFormat, GuruSharedKotlinx_serialization_jsonJsonNamingStrategy;
+@protocol GuruSharedAuthProvider, GuruSharedCommonCallback, GuruSharedDarwinAuthProvider, GuruSharedDarwinAuthProviderFactory, GuruSharedDarwinBillingProvider, GuruSharedDarwinBillingProviderFactory, GuruSharedDarwinDeviceFeature, GuruSharedDarwinFacebookAdid, GuruSharedIBillingProviderHandler, GuruSharedKoin_coreKoinComponent, GuruSharedKoin_coreKoinExtension, GuruSharedKoin_coreKoinScopeComponent, GuruSharedKoin_coreQualifier, GuruSharedKoin_coreScopeCallback, GuruSharedKotlinAnnotation, GuruSharedKotlinComparable, GuruSharedKotlinContinuation, GuruSharedKotlinContinuationInterceptor, GuruSharedKotlinCoroutineContext, GuruSharedKotlinCoroutineContextElement, GuruSharedKotlinCoroutineContextKey, GuruSharedKotlinIterator, GuruSharedKotlinKAnnotatedElement, GuruSharedKotlinKClass, GuruSharedKotlinKClassifier, GuruSharedKotlinKDeclarationContainer, GuruSharedKotlinLazy, GuruSharedKotlinx_coroutines_coreFlow, GuruSharedKotlinx_coroutines_coreFlowCollector, GuruSharedKotlinx_coroutines_coreRunnable, GuruSharedKotlinx_coroutines_coreSharedFlow, GuruSharedKotlinx_coroutines_coreStateFlow, GuruSharedKotlinx_serialization_coreCompositeDecoder, GuruSharedKotlinx_serialization_coreCompositeEncoder, GuruSharedKotlinx_serialization_coreDecoder, GuruSharedKotlinx_serialization_coreDeserializationStrategy, GuruSharedKotlinx_serialization_coreEncoder, GuruSharedKotlinx_serialization_coreKSerializer, GuruSharedKotlinx_serialization_coreSerialDescriptor, GuruSharedKotlinx_serialization_coreSerialFormat, GuruSharedKotlinx_serialization_coreSerializationStrategy, GuruSharedKotlinx_serialization_coreSerializersModuleCollector, GuruSharedKotlinx_serialization_coreStringFormat, GuruSharedKotlinx_serialization_jsonJsonNamingStrategy;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -901,14 +901,13 @@ __attribute__((swift_name("InitRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InitResp")))
 @interface GuruSharedInitResp : GuruSharedBase
-- (instancetype)initWithNewbie:(int32_t)newbie switch:(GuruSharedSwitch *)switch_ __attribute__((swift_name("init(newbie:switch:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNewbie:(int32_t)newbie __attribute__((swift_name("init(newbie:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedInitRespCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedInitResp *)doCopyNewbie:(int32_t)newbie switch:(GuruSharedSwitch *)switch_ __attribute__((swift_name("doCopy(newbie:switch:)")));
+- (GuruSharedInitResp *)doCopyNewbie:(int32_t)newbie __attribute__((swift_name("doCopy(newbie:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) int32_t newbie __attribute__((swift_name("newbie")));
-@property (readonly, getter=switch) GuruSharedSwitch *switch_ __attribute__((swift_name("switch_")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -929,12 +928,14 @@ __attribute__((swift_name("InitResp.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LoginRequest")))
 @interface GuruSharedLoginRequest : GuruSharedBase
-- (instancetype)initWithPf:(NSString *)pf pf_appid:(NSString * _Nullable)pf_appid p_openid:(NSString * _Nullable)p_openid p_token:(NSString * _Nullable)p_token web:(GuruSharedInt * _Nullable)web __attribute__((swift_name("init(pf:pf_appid:p_openid:p_token:web:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPf:(NSString *)pf pf_appid:(NSString * _Nullable)pf_appid p_openid:(NSString * _Nullable)p_openid p_token:(NSString * _Nullable)p_token web:(GuruSharedInt * _Nullable)web fb_adid:(NSString * _Nullable)fb_adid fb_anonid:(NSString * _Nullable)fb_anonid __attribute__((swift_name("init(pf:pf_appid:p_openid:p_token:web:fb_adid:fb_anonid:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) GuruSharedLoginRequestCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedLoginRequest *)doCopyPf:(NSString *)pf pf_appid:(NSString * _Nullable)pf_appid p_openid:(NSString * _Nullable)p_openid p_token:(NSString * _Nullable)p_token web:(GuruSharedInt * _Nullable)web __attribute__((swift_name("doCopy(pf:pf_appid:p_openid:p_token:web:)")));
+- (GuruSharedLoginRequest *)doCopyPf:(NSString *)pf pf_appid:(NSString * _Nullable)pf_appid p_openid:(NSString * _Nullable)p_openid p_token:(NSString * _Nullable)p_token web:(GuruSharedInt * _Nullable)web fb_adid:(NSString * _Nullable)fb_adid fb_anonid:(NSString * _Nullable)fb_anonid __attribute__((swift_name("doCopy(pf:pf_appid:p_openid:p_token:web:fb_adid:fb_anonid:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable fb_adid __attribute__((swift_name("fb_adid")));
+@property (readonly) NSString * _Nullable fb_anonid __attribute__((swift_name("fb_anonid")));
 @property (readonly) NSString * _Nullable p_openid __attribute__((swift_name("p_openid")));
 @property (readonly) NSString * _Nullable p_token __attribute__((swift_name("p_token")));
 @property (readonly) NSString *pf __attribute__((swift_name("pf")));
@@ -1189,33 +1190,6 @@ __attribute__((swift_name("RemoteError.UnknownError")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Switch")))
-@interface GuruSharedSwitch : GuruSharedBase
-- (instancetype)initWithLog:(NSString *)log __attribute__((swift_name("init(log:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) GuruSharedSwitchCompanion *companion __attribute__((swift_name("companion")));
-- (GuruSharedSwitch *)doCopyLog:(NSString *)log __attribute__((swift_name("doCopy(log:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *log __attribute__((swift_name("log")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Switch.Companion")))
-@interface GuruSharedSwitchCompanion : GuruSharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) GuruSharedSwitchCompanion *shared __attribute__((swift_name("shared")));
-- (id<GuruSharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("VerifyReceiptRequest")))
 @interface GuruSharedVerifyReceiptRequest : GuruSharedBase
 - (instancetype)initWithPay_mode:(NSString *)pay_mode receipt:(NSString *)receipt __attribute__((swift_name("init(pay_mode:receipt:)"))) __attribute__((objc_designated_initializer));
@@ -1304,6 +1278,14 @@ __attribute__((swift_name("DispatchersX")))
 @end
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("FacebookAdid")))
+@interface GuruSharedFacebookAdid : GuruSharedBase
+- (instancetype)initWithContext:(id)context __attribute__((swift_name("init(context:)"))) __attribute__((objc_designated_initializer));
+- (NSString * _Nullable)getAnonymousAppDeviceGUID __attribute__((swift_name("getAnonymousAppDeviceGUID()")));
+- (NSString * _Nullable)getAttributionId __attribute__((swift_name("getAttributionId()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InstallReferrer")))
 @interface GuruSharedInstallReferrer : GuruSharedBase
 - (instancetype)initWithContext:(id)context __attribute__((swift_name("init(context:)"))) __attribute__((objc_designated_initializer));
@@ -1386,6 +1368,18 @@ __attribute__((swift_name("StorageKeys")))
 @property (readonly) NSString *TOKEN __attribute__((swift_name("TOKEN")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TimeUtils")))
+@interface GuruSharedTimeUtils : GuruSharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)timeUtils __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) GuruSharedTimeUtils *shared __attribute__((swift_name("shared")));
+- (NSString *)formatNowPattern:(NSString *)pattern __attribute__((swift_name("formatNow(pattern:)")));
+- (int64_t)getCurrentTimeMillis __attribute__((swift_name("getCurrentTimeMillis()")));
+- (int64_t)getCurrentTimeSeconds __attribute__((swift_name("getCurrentTimeSeconds()")));
+@end
+
 __attribute__((swift_name("DarwinAuthProvider")))
 @protocol GuruSharedDarwinAuthProvider
 @required
@@ -1443,6 +1437,7 @@ __attribute__((swift_name("DarwinBridge")))
 @property id<GuruSharedDarwinAuthProviderFactory> _Nullable authProviderFactory __attribute__((swift_name("authProviderFactory")));
 @property id<GuruSharedDarwinBillingProviderFactory> _Nullable billingProviderFactory __attribute__((swift_name("billingProviderFactory")));
 @property id<GuruSharedDarwinDeviceFeature> _Nullable deviceFeature __attribute__((swift_name("deviceFeature")));
+@property id<GuruSharedDarwinFacebookAdid> _Nullable facebookAdid __attribute__((swift_name("facebookAdid")));
 @end
 
 __attribute__((swift_name("DarwinDeviceFeature")))
@@ -1451,6 +1446,13 @@ __attribute__((swift_name("DarwinDeviceFeature")))
 - (NSString * _Nullable)getDeviceFeatures __attribute__((swift_name("getDeviceFeatures()")));
 - (NSString *)getDeviceId __attribute__((swift_name("getDeviceId()")));
 - (NSString *)getSdkVersion __attribute__((swift_name("getSdkVersion()")));
+@end
+
+__attribute__((swift_name("DarwinFacebookAdid")))
+@protocol GuruSharedDarwinFacebookAdid
+@required
+- (NSString * _Nullable)getAnonymousAppDeviceGUID __attribute__((swift_name("getAnonymousAppDeviceGUID()")));
+- (NSString * _Nullable)getAttributionId __attribute__((swift_name("getAttributionId()")));
 @end
 
 

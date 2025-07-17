@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GuruKit'
-  s.version          = '0.1.1'
+  s.version          = '0.2.2'
   s.summary          = 'GuruKit'
   s.description      = <<-DESC
 Guru SDK
