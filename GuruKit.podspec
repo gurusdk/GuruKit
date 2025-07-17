@@ -20,4 +20,9 @@ Guru SDK
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
   s.vendored_frameworks = ['GuruKit.xcframework', 'GuruShared.xcframework']
+  s.subspec 'Facebook' do |fb|
+    fb.dependency 'FBSDKLoginKit', '17.1.0'
+    fb.dependency 'FBSDKCoreKit', '17.1.0'
+    fb.dependency 'FBAEMKit', '17.1.0'
+  end
 end
