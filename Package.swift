@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/gurusdk/GuruKit.git", from: "0.2.3"),
+        .package(url: "https://github.com/gurusdk/GuruKit.git", from: "0.2.4"),
         .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "17.1.0"),
     ],
     targets: [
@@ -32,6 +32,7 @@ let package = Package(
                 "GuruShared",
                 .product(name: "FacebookLogin", package: "facebook-ios-sdk"),
                 .product(name: "FacebookCore", package: "facebook-ios-sdk"),
+                .product(name: "FBAEMKit", package: "facebook-ios-sdk"),
             ],
             path: "Sources/GuruKitWrapper"
         )
