@@ -25,8 +25,6 @@ xcshareddata/
 *.provisionprofile
 *.env
 config.*.json
-*.plist
-*.entitlements
 
 # IDE
 .idea/
@@ -48,3 +46,4 @@ log/
 .temp/
 temp/
 Pods/
+Podfile.lock

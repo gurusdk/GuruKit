@@ -9,6 +9,7 @@ import SwiftUI
 import GuruKit
 import GuruShared
 
+@available(iOS 13.0, *)
 struct ContentView: View {
     @State private var logText: String = ""
     @State private var isLoginSheetPresented = false
@@ -95,6 +96,7 @@ struct ContentView: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct ActionButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -107,7 +109,7 @@ struct ActionButtonStyle: ButtonStyle {
             .padding(.horizontal)
     }
 }
-
+@available(iOS 13.0, *)
 struct LoginSheetView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var logText: String
@@ -134,6 +136,16 @@ struct LoginSheetView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
             }.buttonStyle(ActionButtonStyle())
+            Button("FB登录") {
+                GuruSdk.login(.facebook) { provider, resp in
+                    appendLog("FB登录成功: openid=\(resp.openid), token=\(resp.token)")
+                    GuruSdk.queryAndHandleUnconsumedPurchases()
+                    presentationMode.wrappedValue.dismiss()
+                } onError: { error in
+                    appendLog("FB登录失败: \(error.message ?? "未知错误")")
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }.buttonStyle(ActionButtonStyle())
             Button("取消") {
                 presentationMode.wrappedValue.dismiss()
             }.buttonStyle(ActionButtonStyle())
@@ -145,6 +157,7 @@ struct LoginSheetView: View {
     }
 }
 
+@available(iOS 13.0, *)
 #Preview {
     ContentView()
 }

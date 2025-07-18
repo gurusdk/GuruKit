@@ -87,9 +87,22 @@
                  [self logMessage:[NSString stringWithFormat:@"苹果登录失败: %@", error.message]];
              }];
     }];
+    UIAlertAction *fbAction = [UIAlertAction actionWithTitle:@"FB登录" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [GuruSdk login:GuruSharedAuthProviderType.facebook
+             onSuccess:^(GuruSharedAuthProviderType *provider, GuruSharedLoginResp *resp) {
+                 NSLog(@"FB登录成功: openid=%@, token=%@", resp.openid, resp.token);
+                 [self logMessage:[NSString stringWithFormat:@"FB登录成功: openid=%@, token=%@", resp.openid, resp.token]];
+                 [GuruSdk queryAndHandleUnconsumedPurchases];
+             }
+               onError:^(GuruSharedKotlinThrowable *error) {
+                 NSLog(@"FB登录失败: %@", error.message);
+                 [self logMessage:[NSString stringWithFormat:@"FB登录失败: %@", error.message]];
+             }];
+    }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     [alert addAction:guestAction];
     [alert addAction:appleAction];
+    [alert addAction:fbAction];
     [alert addAction:cancelAction];
     [self presentViewController:alert animated:YES completion:nil];
 }

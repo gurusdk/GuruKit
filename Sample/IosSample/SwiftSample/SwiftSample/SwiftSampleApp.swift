@@ -9,6 +9,7 @@ import SwiftUI
 import GuruShared
 import GuruKit
 
+@available(iOS 14.0, *)
 @main
 struct SwiftSampleApp: App {
     // 适配 UIApplicationDelegate 生命周期
