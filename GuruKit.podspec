@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GuruKit'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'GuruKit'
   s.description      = <<-DESC
 Guru SDK
@@ -23,6 +23,6 @@ Guru SDK
   s.subspec 'Facebook' do |fb|
     fb.dependency 'FBSDKLoginKit', '17.1.0'
     fb.dependency 'FBSDKCoreKit', '17.1.0'
-    fb.dependency 'FBAEMKit', '17.1.0'
   end
+  s.default_subspecs = 'Facebook'
 end
