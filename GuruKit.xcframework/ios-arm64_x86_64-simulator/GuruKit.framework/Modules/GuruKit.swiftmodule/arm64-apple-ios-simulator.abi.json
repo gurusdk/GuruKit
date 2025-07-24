@@ -27053,108 +27053,332 @@
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 25,
+      "value": "\"GuruSDK.FB.LimitedToken\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1078,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1404,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1647,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2189,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 1165,
+      "offset": 2745,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "Array",
-      "offset": 1885,
+      "offset": 3465,
       "length": 27,
       "value": "[\"public_profile\", \"email\"]"
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 3759,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 2190,
+      "offset": 3770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3256,
+      "offset": 4836,
       "length": 16,
       "value": "\"User cancelled\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 3733,
+      "offset": 5313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 3938,
+      "offset": 5518,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4009,
+      "offset": 5589,
       "length": 22,
       "value": "\"FacebookAuthProvider\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 4274,
+      "offset": 5854,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 6130,
       "length": 19,
       "value": "\"No token returned\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 4511,
+      "offset": 6247,
       "length": 16,
       "value": "\"Unknown result\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5099,
+      "offset": 6835,
       "length": 16,
       "value": "\"Result is null\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5232,
+      "offset": 6968,
       "length": 16,
       "value": "\"User cancelled\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "StringLiteral",
-      "offset": 5382,
+      "offset": 7118,
       "length": 15,
       "value": "\"Token is null\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 5650,
+      "offset": 7386,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7559,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7595,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7611,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7654,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7740,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7751,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7807,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7818,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7863,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7884,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7907,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 7940,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8201,
+      "length": 5,
+      "value": "\"sub\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8245,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8427,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8694,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8730,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8790,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8845,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8856,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8912,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 8923,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8949,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8970,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8993,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 9026,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/FacebookAuthProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 9288,
+      "length": 5,
+      "value": "\"exp\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Auth\/AppleAuthProvider.swift",
@@ -28057,7 +28281,7 @@
       "kind": "StringLiteral",
       "offset": 393,
       "length": 7,
-      "value": "\"0.2.2\""
+      "value": "\"0.2.5\""
     },
     {
       "filePath": "\/Users\/renzo\/workspace\/gurusdk-client\/iosApp\/GuruKit\/GuruKit\/Extension\/Keychain.swift",
